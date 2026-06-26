@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partie 3 — Enveloppes financières · Encyclopédie du Patrimoine</title>
+<meta name="description" content="CTO, PEA, PEA-PME, assurance-vie française et luxembourgeoise, contrat de capitalisation, PER : fiscalité, fonctionnement et arbitrages.">
+<link rel="stylesheet" href="assets/encyclo.css">
+</head>
+<body data-part="3">
+<div id="progress"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" aria-label="Sommaire"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a class="brand" href="index.html" style="color:inherit">
+    <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#7c3aed"/><path d="M9 22V10l7 5 7-5v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Encyclopédie du Patrimoine<small>Partie 3 · Enveloppes</small></span>
+  </a>
+  <div class="spacer"></div>
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="searchInput" type="search" placeholder="Rechercher dans cette partie…  ( / )" autocomplete="off" aria-label="Recherche">
+  </div>
+  <button class="icon-btn" id="themeToggle" title="Basculer clair / sombre" aria-label="Thème">
+    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>Partie 3 — Sommaire</h4>
+    <nav>
+      <ul class="toc">
+        <li><a href="#c1">3.1 · Compte-titres (CTO)</a></li>
+        <li><a href="#c2">3.2 · PEA &amp; PEA-PME</a></li>
+        <li><a class="lvl3" href="#c2s1">3.2.1 Fonctionnement</a></li>
+        <li><a class="lvl3" href="#c2s2">3.2.2 Fiscalité des retraits</a></li>
+        <li><a href="#c3">3.3 · Assurance-vie française</a></li>
+        <li><a class="lvl3" href="#c3s1">3.3.1 Architecture</a></li>
+        <li><a class="lvl3" href="#c3s2">3.3.2 Fiscalité des rachats</a></li>
+        <li><a class="lvl3" href="#c3s3">3.3.3 Volet succession</a></li>
+        <li><a href="#c4">3.4 · Assurance-vie luxembourgeoise</a></li>
+        <li><a href="#c5">3.5 · Contrat de capitalisation</a></li>
+        <li><a href="#c6">3.6 · PER</a></li>
+        <li><a class="lvl3" href="#c6s1">3.6.1 Déductibilité</a></li>
+        <li><a class="lvl3" href="#c6s2">3.6.2 Sorties &amp; décès</a></li>
+        <li><a href="#c7">3.7 · Synthèse comparative</a></li>
+      </ul>
+      <h4>Naviguer</h4>
+      <ul class="toc">
+        <li><a href="partie-2-fiscalite.html">← Partie 2 · Fiscalité</a></li>
+        <li><a href="index.html">Sommaire général</a></li>
+        <li><a href="partie-4-allocation.html">Partie 4 · Allocation →</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="scrim"></div>
+
+  <main class="content" style="--partno:'3'">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a><span class="sep">/</span>
+      <a href="partie-3-enveloppes.html">Partie 3</a><span class="sep">/</span>
+      <span id="crumb-current">Enveloppes financières</span>
+    </nav>
+
+    <section class="part-hero" data-crumb="Partie 3">
+      <svg class="hero-art" viewBox="0 0 200 200" fill="none"><rect x="30" y="60" width="140" height="90" rx="10" stroke="#fff" stroke-width="3"/><path d="M30 85h140M55 115h40" stroke="#fff" stroke-width="3"/></svg>
+      <div class="eyebrow">Partie 3</div>
+      <h1>Enveloppes financières</h1>
+      <p>Les contenants fiscaux qui transforment un rendement brut en rendement net : compte-titres, PEA, assurance-vie française et luxembourgeoise, contrat de capitalisation et PER. L'art de choisir le bon contenant pour chaque objectif.</p>
+    </section>
+
+    <p class="lead">Une enveloppe n'est pas un placement : c'est un <b>cadre fiscal et juridique</b> qui héberge des actifs. Le même fonds logé dans un CTO, un PEA ou une assurance-vie aura trois fiscalités différentes. Choisir l'enveloppe — par objectif, horizon et fiscalité — précède le choix des supports.</p>
+
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Trois leviers distinguent les enveloppes : <b>(1)</b> la fiscalité <b>pendant</b> la détention (capitalisation en franchise ou non), <b>(2)</b> la fiscalité <b>à la sortie</b> (rachat, retrait), <b>(3)</b> la fiscalité <b>au décès</b> (succession). L'assurance-vie est la seule à optimiser les trois.</div></div>
+
+    <!-- ============ CHAPITRE 1 ============ -->
+    <h2 class="chapter" id="c1" data-crumb="3.1 Compte-titres">Compte-titres ordinaire (CTO)</h2>
+    <div class="notion-card" data-search="CTO compte-titres ordinaire univers libre actions obligations ETF PFU fiscalite annuelle dividendes plus-values">
+      <p class="def"><b>CTO.</b> Enveloppe la plus <b>souple et universelle</b> : tous les instruments (actions monde, obligations, ETF, produits structurés, private equity coté). Aucun plafond, aucune durée. Contrepartie : <b>fiscalité immédiate</b> au fil de l'eau.</p>
+      <ul>
+        <li><b>Dividendes &amp; intérêts</b> : PFU 30 % (ou barème).</li>
+        <li><b>Plus-values</b> : imposées <b>à chaque cession</b> au PFU 30 % <span class="ref">art. 150-0 A CGI</span>.</li>
+        <li><b>Pas de capitalisation en franchise</b> : l'impôt frotte à chaque arbitrage générant une plus-value.</li>
+      </ul>
+      <div class="callout exemple"><span class="ico">🧩</span><div class="body"><b class="tag">Usage type</b>Le CTO loge ce que les enveloppes fiscales ne peuvent pas accueillir : actions hors UE en direct, ETF non éligibles PEA, obligations, produits structurés sur mesure, private equity. C'est l'enveloppe de la <b>diversification large</b>.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 2 ============ -->
+    <h2 class="chapter" id="c2" data-crumb="3.2 PEA">PEA &amp; PEA-PME</h2>
+
+    <h3 class="section" id="c2s1" data-crumb="3.2.1 Fonctionnement">Fonctionnement &amp; plafonds</h3>
+    <div class="notion-card" data-search="PEA plan epargne en actions 150000 PEA-PME 225000 actions europeennes UE ETF eligibles capitalisation franchise">
+      <p class="def"><b>PEA.</b> Enveloppe dédiée aux <b>actions européennes</b> (et ETF/OPC éligibles à ≥ 75 % d'actions UE), plafonnée à <b>150 000 €</b> de versements. Le <b>PEA-PME</b> (plafond <b>225 000 €</b>, partagé : total PEA + PEA-PME ≤ 225 000 €) cible les PME/ETI.</p>
+      <p>Atout central : <b>capitalisation en franchise d'impôt</b>. Tant qu'aucun retrait n'est effectué, dividendes et plus-values internes ne sont pas imposés — on peut arbitrer librement <b>sans frottement fiscal</b>.</p>
+    </div>
+
+    <h3 class="section" id="c2s2" data-crumb="3.2.2 Fiscalité des retraits">Fiscalité des retraits</h3>
+    <div class="table-wrap" data-search="PEA retrait avant 5 ans apres 5 ans exoneration IR prelevements sociaux cloture 157 CGI">
+      <table>
+        <caption>Tableau 3.1 — Fiscalité du PEA selon l'antériorité</caption>
+        <thead><tr><th>Retrait</th><th>IR sur les gains</th><th>Prélèvements sociaux</th><th>Effet sur le plan</th></tr></thead>
+        <tbody>
+          <tr><td><b>Avant 5 ans</b></td><td>12,8 % (PFU)</td><td>17,2 %</td><td>Clôture (sauf exceptions)</td></tr>
+          <tr><td><b>Après 5 ans</b></td><td><span class="pill ok">Exonéré</span></td><td>17,2 %</td><td>Retrait possible sans clôture, mais plus de versement après retrait (régime assoupli)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Exemple chiffré</b>PEA de 5 ans révolus, 100 000 € de versements devenus 160 000 €. Retrait total → gain 60 000 € : <b>IR = 0 €</b>, PS = 60 000 × 17,2 % = <b>10 320 €</b>. Net = 149 680 €. Sur un CTO, le même gain aurait subi 60 000 × 30 % = 18 000 € → le PEA économise <b>7 680 €</b> sur cette seule sortie.</div></div>
+    <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>Le délai de 5 ans court à compter de la <b>date d'ouverture (premier versement)</b>, pas de chaque versement. Réflexe : <b>ouvrir un PEA très tôt avec un versement minimal</b> (« prendre date »), même sans l'alimenter, pour démarrer le compteur des 5 ans.</div></div>
+    <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Référence</b>Exonération d'IR après 5 ans : <span class="ref">art. 157-5° bis CGI</span>. Les retraits avant 8 ans, depuis l'assouplissement, n'entraînent plus systématiquement la clôture après 5 ans.</div></div>
+
+    <!-- ============ CHAPITRE 3 ============ -->
+    <h2 class="chapter" id="c3" data-crumb="3.3 Assurance-vie FR">Assurance-vie française</h2>
+
+    <h3 class="section" id="c3s1" data-crumb="3.3.1 Architecture">Architecture du contrat</h3>
+    <div class="notion-card" data-search="assurance-vie fonds euros unites de compte UC gestion libre pilotee profilee souscripteur assure beneficiaire">
+      <p class="def"><b>Assurance-vie.</b> Contrat par lequel l'assureur s'engage, en échange de primes, à verser un capital au(x) bénéficiaire(s) en cas de vie (rachat) ou de décès de l'assuré. Enveloppe reine du patrimoine français : souplesse, capitalisation et transmission.</p>
+      <div class="grid cols-2">
+        <div class="mini" data-search="fonds en euros garanti effet cliquet rendement liquidite"><h5>Fonds en euros</h5><p style="margin:0;font-size:13.5px;color:var(--text-soft)">Capital <b>garanti</b>, effet cliquet (les gains sont acquis). Rendement modéré, sécurité maximale.</p></div>
+        <div class="mini" data-search="unites de compte UC actions immobilier risque non garanti potentiel"><h5>Unités de compte (UC)</h5><p style="margin:0;font-size:13.5px;color:var(--text-soft)">Supports investis (actions, immobilier, structurés). <b>Non garanties</b>, potentiel supérieur, risque de perte.</p></div>
+      </div>
+      <p>Modes de gestion : <b>libre</b> (le client arbitre), <b>profilée</b> (allocation type selon profil de risque), <b>pilotée / sous mandat</b> (délégation à un gérant). Arbitrages internes <b>sans frottement fiscal</b>.</p>
+    </div>
+
+    <h3 class="section" id="c3s2" data-crumb="3.3.2 Fiscalité des rachats">Fiscalité des rachats</h3>
+    <div class="notion-card" data-search="rachat assurance-vie fiscalite 8 ans abattement 4600 9200 PFL prelevement liberatoire 7.5 12.8 24.7 part imposable 125-0 A CGI">
+      <p>Seule la <b>part de gains</b> contenue dans un rachat est imposée (la part de capital revient en franchise). Au-delà de <b>8 ans</b>, abattement annuel de <b>4 600 € (célibataire) / 9 200 € (couple)</b> sur les gains <span class="ref">art. 125-0 A CGI</span>.</p>
+      <div class="table-wrap" data-search="tableau fiscalite rachat avant 8 ans apres 8 ans 150000 7.5 12.8 prelevements sociaux">
+        <table>
+          <caption>Tableau 3.2 — Fiscalité des gains rachetés (primes versées depuis le 27/09/2017)</caption>
+          <thead><tr><th>Antériorité</th><th>Taux IR sur les gains</th><th>Abattement annuel</th></tr></thead>
+          <tbody>
+            <tr><td>Avant 8 ans</td><td>12,8 % (PFU)</td><td>—</td></tr>
+            <tr><td>Après 8 ans — primes ≤ 150 000 €</td><td><b>7,5 %</b></td><td>4 600 € / 9 200 €</td></tr>
+            <tr><td>Après 8 ans — fraction primes &gt; 150 000 €</td><td>12,8 %</td><td>4 600 € / 9 200 €</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:12.5px;color:var(--text-mute);padding:0 12px 8px">+ prélèvements sociaux 17,2 % dans tous les cas.</p>
+      </div>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Exemple chiffré</b>Contrat &gt; 8 ans, couple, primes &lt; 150 k€. Rachat comportant <b>15 000 € de gains</b>. Abattement 9 200 € → base imposable IR = 5 800 €. IR = 5 800 × 7,5 % = <b>435 €</b>. PS = 15 000 × 17,2 % = <b>2 580 €</b> (les PS portent sur la totalité des gains, sans abattement). Total = <b>3 015 €</b>, soit une <b>pression effective de 20,1 %</b> sur les gains — bien en deçà du PFU.</div></div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>L'abattement de 4 600 / 9 200 € est <b>annuel</b> : il se « consomme » et se « recharge » chaque année civile. Stratégie : <b>fractionner les rachats</b> sur plusieurs années pour purger les gains dans la limite de l'abattement et n'acquitter que les PS.</div></div>
+    </div>
+
+    <h3 class="section" id="c3s3" data-crumb="3.3.3 Volet succession">Volet succession : 990 I &amp; 757 B</h3>
+    <div class="notion-card" data-search="assurance-vie succession hors succession 990 I 152500 abattement beneficiaire 757 B 30500 avant apres 70 ans clause beneficiaire">
+      <p>L'assurance-vie est <b>hors succession civile</b> : le capital décès est transmis aux bénéficiaires désignés, hors part réservataire (sauf primes manifestement exagérées). Sa fiscalité dépend de l'<b>âge de l'assuré au versement</b> des primes.</p>
+      <div class="table-wrap" data-search="990 I 757 B abattement 152500 30500 70 ans prelevement 20 31.25">
+        <table>
+          <caption>Tableau 3.3 — Fiscalité du capital décès</caption>
+          <thead><tr><th>Primes versées</th><th>Régime</th><th>Abattement</th><th>Taxation au-delà</th></tr></thead>
+          <tbody>
+            <tr><td><b>Avant 70 ans</b></td><td><span class="ref">art. 990 I CGI</span></td><td><b>152 500 €</b> / bénéficiaire</td><td>20 % puis 31,25 % (&gt; 700 k€)</td></tr>
+            <tr><td><b>Après 70 ans</b></td><td><span class="ref">art. 757 B CGI</span></td><td><b>30 500 €</b> (global, tous bénéficiaires)</td><td>Droits de succession sur les primes ; <b>les gains restent exonérés</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Avant 70 ans : abattement de <b>152 500 € par bénéficiaire</b> — un levier de transmission massif, multipliable par le nombre de bénéficiaires. Après 70 ans : seules les <b>primes</b> sont taxables (abattement global 30 500 €), mais <b>les plus-values échappent</b> aux droits — y verser conserve donc un intérêt.</div></div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège — clause bénéficiaire</b>Une clause bénéficiaire mal rédigée (bénéficiaire prédécédé sans représentation, « mes héritiers » imprécis, oubli du démembrement) ruine la stratégie. La clause doit être <b>revue à chaque événement de vie</b> et peut être <b>démembrée</b> (usufruit au conjoint, nue-propriété aux enfants) pour optimiser.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 4 ============ -->
+    <h2 class="chapter" id="c4" data-crumb="3.4 AV luxembourgeoise">Assurance-vie luxembourgeoise</h2>
+    <div class="notion-card" data-search="assurance-vie luxembourgeoise triangle de securite super privilege FAS FID FIC neutralite fiscale multi-devises">
+      <p class="def"><b>AV luxembourgeoise.</b> Contrat de droit luxembourgeois bénéficiant d'une <b>protection renforcée</b> de l'épargnant et d'une grande liberté de gestion, particulièrement adapté aux <b>patrimoines élevés</b> et aux <b>expatriés</b>.</p>
+      <div class="grid cols-2">
+        <div class="mini" data-search="triangle securite depot separe banque depositaire assureur CAA"><h5>🔺 Triangle de sécurité</h5><p style="margin:0;font-size:13.5px;color:var(--text-soft)">Les actifs sont déposés chez une banque dépositaire <b>séparée</b> de l'assureur, sous contrôle du Commissariat aux Assurances. Cantonnement protecteur.</p></div>
+        <div class="mini" data-search="super privilege creancier premier rang faillite assureur"><h5>⭐ Super-privilège</h5><p style="margin:0;font-size:13.5px;color:var(--text-soft)">Le souscripteur est <b>créancier de premier rang</b> sur les actifs en cas de défaillance de l'assureur — protection supérieure au fonds de garantie français (70 000 €).</p></div>
+      </div>
+      <ul>
+        <li><b>Neutralité fiscale</b> : le Luxembourg n'impose pas ; c'est la fiscalité du pays de <b>résidence</b> du souscripteur qui s'applique. Pour un résident français, fiscalité <b>identique à l'AV française</b> (990 I, 757 B, rachats).</li>
+        <li><b>Liberté de gestion</b> : multi-devises, fonds internes dédiés (FID), fonds d'assurance spécialisés (FAS), fonds internes collectifs (FIC), accès à des actifs non cotés et titres vifs.</li>
+        <li><b>Portabilité</b> : avantage majeur en cas d'<b>expatriation</b> (le contrat suit le résident).</li>
+      </ul>
+      <div class="table-wrap compact" data-search="comparaison FAS FID FIC fonds interne dedie gestion seuil">
+        <table>
+          <caption>Tableau 3.4 — Modes de gestion luxembourgeois</caption>
+          <thead><tr><th>Support</th><th>Nature</th><th>Public</th></tr></thead>
+          <tbody>
+            <tr><td><b>FAS</b></td><td>Fonds d'assurance spécialisé : le client choisit les supports dans un univers défini</td><td>Patrimoine intermédiaire</td></tr>
+            <tr><td><b>FID</b></td><td>Fonds interne dédié : gestion discrétionnaire par un gérant mandaté</td><td>Patrimoine élevé (seuils par classe de fortune)</td></tr>
+            <tr><td><b>FIC</b></td><td>Fonds interne collectif : mutualisé entre plusieurs souscripteurs</td><td>Mutualisation</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Le Luxembourg n'apporte <b>aucun avantage fiscal</b> pour un résident français (même régime que l'AV FR) : son intérêt est la <b>sécurité juridique</b>, la <b>liberté d'investissement</b> et la <b>portabilité internationale</b>. À réserver aux patrimoines significatifs (souvent &gt; 250 k€).</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 5 ============ -->
+    <h2 class="chapter" id="c5" data-crumb="3.5 Capitalisation">Contrat de capitalisation</h2>
+    <div class="notion-card" data-search="contrat de capitalisation transmissible donation personne morale IS societe pas de denouement deces fiscalite rachat identique assurance-vie">
+      <p class="def"><b>Contrat de capitalisation.</b> Jumeau de l'assurance-vie pour la fiscalité des <b>rachats</b> (mêmes seuils, mêmes abattements), mais <b>sans assuré</b> : il ne se dénoue pas au décès. Il <b>entre dans la succession</b> et peut être <b>transmis / donné</b> en conservant son antériorité fiscale.</p>
+      <ul>
+        <li><b>Transmissible de son vivant</b> (donation) : le donataire conserve l'antériorité du contrat et la valeur des gains latents.</li>
+        <li><b>Détenable par une personne morale</b> (SCI à l'IS, holding) pour placer une trésorerie — usage impossible avec l'assurance-vie.</li>
+        <li>Pas d'abattement de 152 500 € au décès (ce n'est pas une assurance) : il suit les <b>droits de succession</b> de droit commun.</li>
+      </ul>
+      <div class="callout exemple"><span class="ico">🧩</span><div class="body"><b class="tag">Usage type</b>Une personne morale (holding patrimoniale, SCI à l'IS) souhaite dynamiser sa trésorerie excédentaire : le contrat de capitalisation est l'une des rares enveloppes accessibles, là où l'assurance-vie est réservée aux personnes physiques.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 6 ============ -->
+    <h2 class="chapter" id="c6" data-crumb="3.6 PER">Plan d'Épargne Retraite (PER)</h2>
+
+    <h3 class="section" id="c6s1" data-crumb="3.6.1 Déductibilité">Déductibilité à l'entrée</h3>
+    <div class="notion-card" data-search="PER plan epargne retraite deductibilite versements plafond 10 PASS 163 quatervicies effort epargne retraite TMI">
+      <p class="def"><b>PER individuel.</b> Enveloppe de préparation de la retraite dont les versements volontaires sont, sur option, <b>déductibles du revenu imposable</b> <span class="ref">art. 163 quatervicies CGI</span>, dans la limite d'un plafond (≈ 10 % des revenus professionnels, ou 10 % du PASS).</p>
+      <p>L'avantage à l'entrée est proportionnel à la <b>TMI</b> : c'est l'enveloppe reine des contribuables fortement imposés.</p>
+      <div class="calc" data-search="calcul economie impot PER versement 10000 TMI 41 30 11">
+        <div class="row"><span class="lbl">Versement PER déductible</span><span class="val">10 000 €</span></div>
+        <div class="row"><span class="lbl">Économie d'IR si TMI 41 %</span><span class="val">4 100 €</span></div>
+        <div class="row"><span class="lbl">Économie d'IR si TMI 30 %</span><span class="val">3 000 €</span></div>
+        <div class="row"><span class="lbl">Économie d'IR si TMI 11 %</span><span class="val">1 100 €</span></div>
+        <div class="row total"><span class="lbl">Effort d'épargne réel (TMI 41 %)</span><span class="val">5 900 €</span></div>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Le PER déductible est une <b>opération de décalage</b> : on déduit à la TMI d'aujourd'hui (vie active, TMI élevée) pour être imposé à la TMI de demain (retraite, TMI souvent plus basse). Le gain naît de l'<b>écart de TMI</b> entre entrée et sortie.</div></div>
+    </div>
+
+    <h3 class="section" id="c6s2" data-crumb="3.6.2 Sorties &amp; décès">Sorties, fiscalité &amp; décès</h3>
+    <div class="notion-card" data-search="PER sortie capital rente fiscalite deblocage anticipe residence principale deces avant apres 70 ans 990 I 757 B">
+      <p>Sortie possible en <b>capital</b> (fractionné), en <b>rente viagère</b>, ou mixte. <b>Cas de déblocage anticipé</b> : accidents de la vie (invalidité, décès du conjoint, surendettement, fin de droits chômage…) et <b>acquisition de la résidence principale</b>.</p>
+      <div class="table-wrap" data-search="fiscalite sortie PER capital part versements bareme plus-values PFU rente RVTG">
+        <table>
+          <caption>Tableau 3.5 — Fiscalité de la sortie en capital (versements déduits)</caption>
+          <thead><tr><th>Composante</th><th>Imposition</th></tr></thead>
+          <tbody>
+            <tr><td>Part correspondant aux <b>versements</b> (déduits à l'entrée)</td><td>Barème de l'IR (réintégrée)</td></tr>
+            <tr><td>Part correspondant aux <b>plus-values</b></td><td>PFU 30 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>L'avantage à l'entrée n'est pas « gratuit » : les versements déduits sont <b>réintégrés au barème</b> à la sortie. Si la TMI de sortie ≥ TMI d'entrée, le gain fiscal s'évapore (seul subsiste le différé de capitalisation). Vérifier la cohérence du pari sur les TMI.</div></div>
+      <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Décès</b>Le PER assurantiel suit, au décès, une logique proche de l'assurance-vie (abattement 152 500 € / bénéficiaire si décès <b>avant 70 ans</b> ; régime 757 B au-delà), avec des subtilités sur l'âge apprécié au décès. Le PER peut ainsi cumuler avantage retraite <b>et</b> transmission.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 7 ============ -->
+    <h2 class="chapter" id="c7" data-crumb="3.7 Synthèse">Synthèse comparative des enveloppes</h2>
+    <div class="table-wrap" data-search="tableau comparatif enveloppes CTO PEA assurance-vie PER capitalisation plafond fiscalite succession liquidite univers">
+      <table>
+        <caption>Tableau 3.6 — Comparatif des enveloppes financières</caption>
+        <thead><tr><th>Enveloppe</th><th>Univers</th><th>Plafond</th><th>Fiscalité détention</th><th>Atout sortie</th><th>Décès</th></tr></thead>
+        <tbody>
+          <tr><td><b>CTO</b></td><td>Illimité</td><td>Aucun</td><td>PFU au fil de l'eau</td><td>Souplesse totale</td><td>Succession + purge PV</td></tr>
+          <tr><td><b>PEA</b></td><td>Actions UE</td><td>150 000 €</td><td>Franchise interne</td><td>Exonéré IR &gt; 5 ans</td><td>Clôture au décès</td></tr>
+          <tr><td><b>AV (FR/LUX)</b></td><td>€ + UC large</td><td>Aucun</td><td>Franchise interne</td><td>Abatt. 4 600/9 200 € &gt; 8 ans</td><td><span class="pill ok">152 500 €/bénéf.</span></td></tr>
+          <tr><td><b>Capitalisation</b></td><td>€ + UC</td><td>Aucun</td><td>Franchise interne</td><td>Idem AV (rachat)</td><td>Transmissible vivant</td></tr>
+          <tr><td><b>PER</b></td><td>€ + UC</td><td>Plafond déduction</td><td>Franchise interne</td><td>Déduction entrée</td><td>Proche AV (selon âge)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Synthèse de la partie</b>Logique d'assemblage type : <b>PEA</b> pour les actions UE long terme (exonération), <b>assurance-vie</b> pour la capitalisation souple + transmission, <b>PER</b> pour défiscaliser un haut revenu en préparant la retraite, <b>CTO</b> pour tout ce qui n'entre pas ailleurs, <b>capitalisation</b> pour les personnes morales et la transmission du vivant. On combine, on ne choisit pas une seule enveloppe.</div></div>
+
+    <nav class="part-nav">
+      <a class="prev" href="partie-2-fiscalite.html"><small>Partie précédente</small><b>← 2 · Fiscalité</b></a>
+      <a class="next" href="partie-4-allocation.html"><small>Partie suivante</small><b>4 · Allocation d'actifs →</b></a>
+    </nav>
+
+    <div class="foot"><p class="disclaimer"><b>⚠️ Avertissement.</b> Régimes à jour au 25/06/2026. La fiscalité de l'assurance-vie dépend de la date de versement des primes et de l'âge de l'assuré ; celle du PER de l'option de déduction exercée. Contenu pédagogique, non constitutif d'un conseil personnalisé.</p></div>
+
+  </div>
+  </main>
+</div>
+
+<button id="toTop" title="Retour en haut" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/encyclo.js"></script>
+</body>
+</html>

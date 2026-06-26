@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partie 10 — Comptabilité · Encyclopédie du Patrimoine</title>
+<meta name="description" content="Comprendre la comptabilité : le bilan (actif, passif, immobilisations, capitaux propres), le compte de résultat, lire les comptes, les ratios et ce qui fait la rentabilité d'une société.">
+<link rel="stylesheet" href="assets/encyclo.css">
+</head>
+<body data-part="10">
+<div id="progress"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" aria-label="Sommaire"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a class="brand" href="index.html" style="color:inherit">
+    <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0e7490"/><path d="M9 22V10l7 5 7-5v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Encyclopédie du Patrimoine<small>Partie 10 · Comptabilité</small></span>
+  </a>
+  <div class="spacer"></div>
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="searchInput" type="search" placeholder="Rechercher dans cette partie…  ( / )" autocomplete="off" aria-label="Recherche">
+  </div>
+  <button class="icon-btn" id="themeToggle" title="Basculer clair / sombre" aria-label="Thème">
+    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>Partie 10 — Sommaire</h4>
+    <nav>
+      <ul class="toc">
+        <li><a href="#c1">10.1 · À quoi sert la compta</a></li>
+        <li><a href="#c2">10.2 · Le bilan</a></li>
+        <li><a class="lvl3" href="#c2s1">10.2.1 L'actif</a></li>
+        <li><a class="lvl3" href="#c2s2">10.2.2 Le passif</a></li>
+        <li><a class="lvl3" href="#c2s3">10.2.3 Lire un bilan</a></li>
+        <li><a href="#c3">10.3 · Le compte de résultat</a></li>
+        <li><a href="#c4">10.4 · Lire &amp; analyser</a></li>
+        <li><a class="lvl3" href="#c4s1">10.4.1 Les SIG</a></li>
+        <li><a class="lvl3" href="#c4s2">10.4.2 Les ratios clés</a></li>
+        <li><a href="#c5">10.5 · Ce qui fait la rentabilité</a></li>
+        <li><a href="#c6">10.6 · Vital pour l'indépendant</a></li>
+      </ul>
+      <h4>Naviguer</h4>
+      <ul class="toc"><li><a href="index.html">Sommaire général</a></li></ul>
+    </nav>
+  </aside>
+  <div class="scrim"></div>
+
+  <main class="content" style="--partno:'10'">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a><span class="sep">/</span>
+      <a href="#">Partie 10</a><span class="sep">/</span>
+      <span id="crumb-current">Comptabilité</span>
+    </nav>
+
+    <section class="part-hero" data-crumb="Partie 10">
+      <svg class="hero-art" viewBox="0 0 200 200" fill="none"><rect x="40" y="45" width="120" height="110" rx="8" stroke="#fff" stroke-width="3"/><path d="M40 75h120M100 75v80M60 95h25M60 110h25M115 95h25M115 125h25" stroke="#fff" stroke-width="3"/></svg>
+      <div class="eyebrow">Partie 10</div>
+      <h1>Comptabilité</h1>
+      <p>Lire et comprendre les comptes d'une entreprise : le bilan (ce que l'on possède et ce que l'on doit), le compte de résultat (ce que l'on gagne), les ratios qui révèlent la santé financière, et ce qui fait réellement la rentabilité. L'alphabet de tout futur indépendant.</p>
+    </section>
+
+    <p class="lead">On ne pilote bien que ce que l'on mesure. La comptabilité n'est pas une corvée administrative : c'est le <b>tableau de bord</b> de l'entreprise. Savoir lire un bilan et un compte de résultat permet de comprendre si une activité est <b>solide</b>, <b>rentable</b> et <b>pérenne</b> — que l'on dirige sa société, que l'on rachète une affaire ou que l'on investisse.</p>
+
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Deux documents résument la vie d'une entreprise : le <b>bilan</b> = une <b>photo</b> du patrimoine à un instant T (ce qu'on a, ce qu'on doit) ; le <b>compte de résultat</b> = un <b>film</b> de l'activité sur l'année (recettes − dépenses = bénéfice ou perte). L'un montre la <b>solidité</b>, l'autre la <b>performance</b>.</div></div>
+
+    <!-- ============ CHAPITRE 1 ============ -->
+    <h2 class="chapter" id="c1" data-crumb="10.1 À quoi sert la compta">À quoi sert la comptabilité ?</h2>
+    <div class="notion-card" data-search="comptabilite image fidele pilotage obligation legale partie double debit credit liasse fiscale expert-comptable">
+      <p class="def"><b>Comptabilité.</b> Système d'enregistrement de tous les flux économiques de l'entreprise, qui produit une <b>image fidèle</b> de sa situation financière. Elle repose sur le principe de la <b>partie double</b> : toute opération a une origine et une destination (un débit et un crédit qui s'équilibrent).</p>
+      <div class="grid cols-3">
+        <div class="mini" data-search="obligation legale liasse fiscale impots comptes annuels"><h5>⚖️ Obligation</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Obligation légale pour les sociétés : tenir des comptes et déposer une <b>liasse fiscale</b>. Base du calcul de l'impôt.</p></div>
+        <div class="mini" data-search="pilotage gestion decision tableau de bord rentabilite tresorerie"><h5>🧭 Pilotage</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Outil de décision : suivre la <b>marge</b>, la <b>trésorerie</b>, savoir si l'on gagne de l'argent et où.</p></div>
+        <div class="mini" data-search="communication banque investisseur valorisation cession credibilite"><h5>📣 Communication</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Langage commun avec banques, investisseurs et repreneurs : sert à <b>valoriser</b> et financer l'entreprise.</p></div>
+      </div>
+    </div>
+
+    <!-- ============ CHAPITRE 2 ============ -->
+    <h2 class="chapter" id="c2" data-crumb="10.2 Le bilan">Le bilan</h2>
+    <div class="notion-card" data-search="bilan photo patrimoine actif passif equilibre emplois ressources egalite total">
+      <p class="def"><b>Bilan.</b> Document qui présente, à une date donnée, ce que l'entreprise <b>possède</b> (l'<b>actif</b>, à gauche) et comment elle l'a <b>financé</b> (le <b>passif</b>, à droite). Règle d'or : <b>l'actif est toujours égal au passif</b> — tout ce qu'on possède a forcément été financé par quelque chose.</p>
+      <div class="figure" data-search="schema bilan actif passif immobilisations stocks creances tresorerie capitaux propres dettes">
+        <svg viewBox="0 0 660 330" role="img" aria-label="Structure d'un bilan">
+          <style>
+            .ttl{font:700 13px var(--font-sans);fill:#fff}.sub{font:600 11px var(--font-sans);fill:var(--accent-ink)}.it{font:11px var(--font-sans);fill:var(--text-soft)}
+            .head{fill:var(--accent)} .actif{fill:#e8f3f6;stroke:var(--accent);stroke-width:1} .passif{fill:#fdeee4;stroke:#c2410c;stroke-width:1}
+            .lblA{font:700 12px var(--font-sans);fill:var(--accent-ink)} .lblP{font:700 12px var(--font-sans);fill:#9a3412}
+          </style>
+          <rect class="head" x="20" y="14" width="310" height="28" rx="6"/><text x="175" y="33" text-anchor="middle" class="ttl">ACTIF — ce que l'entreprise possède</text>
+          <rect class="head" x="340" y="14" width="300" height="28" rx="6" fill="#c2410c"/><text x="490" y="33" text-anchor="middle" class="ttl">PASSIF — comment c'est financé</text>
+
+          <rect class="actif" x="20" y="50" width="310" height="86" rx="6"/><text x="30" y="68" class="lblA">Actif immobilisé</text>
+          <text x="34" y="88" class="it">• Immobilisations incorporelles (fonds, brevets)</text>
+          <text x="34" y="105" class="it">• Immobilisations corporelles (locaux, machines)</text>
+          <text x="34" y="122" class="it">• Immobilisations financières (titres, dépôts)</text>
+
+          <rect class="actif" x="20" y="142" width="310" height="86" rx="6"/><text x="30" y="160" class="lblA">Actif circulant</text>
+          <text x="34" y="180" class="it">• Stocks</text>
+          <text x="34" y="197" class="it">• Créances clients (factures à encaisser)</text>
+          <text x="34" y="214" class="it">• Disponibilités (trésorerie en banque)</text>
+
+          <rect class="passif" x="340" y="50" width="300" height="86" rx="6"/><text x="350" y="68" class="lblP">Capitaux propres</text>
+          <text x="354" y="88" class="it">• Capital social (apports des associés)</text>
+          <text x="354" y="105" class="it">• Réserves (bénéfices accumulés)</text>
+          <text x="354" y="122" class="it">• Résultat de l'exercice</text>
+
+          <rect class="passif" x="340" y="142" width="300" height="86" rx="6"/><text x="350" y="160" class="lblP">Dettes</text>
+          <text x="354" y="180" class="it">• Dettes financières (emprunts bancaires)</text>
+          <text x="354" y="197" class="it">• Dettes fournisseurs</text>
+          <text x="354" y="214" class="it">• Dettes fiscales &amp; sociales (TVA, charges)</text>
+
+          <rect x="20" y="244" width="620" height="30" rx="6" fill="var(--bg-soft)" stroke="var(--border-strong)"/>
+          <text x="330" y="263" text-anchor="middle" class="sub">TOTAL ACTIF  =  TOTAL PASSIF  (le bilan est toujours équilibré)</text>
+          <text x="330" y="300" text-anchor="middle" class="it">↑ emplois (où va l'argent)            ressources (d'où vient l'argent) ↑</text>
+        </svg>
+        <figcaption>La structure d'un bilan : à gauche les emplois, à droite les ressources — toujours à l'équilibre.</figcaption>
+      </div>
+    </div>
+
+    <h3 class="section" id="c2s1" data-crumb="10.2.1 L'actif">L'actif : ce que l'entreprise possède</h3>
+    <div class="notion-card" data-search="actif immobilise circulant immobilisations incorporelles corporelles financieres stocks creances clients tresorerie disponibilites amortissement">
+      <div class="table-wrap" data-search="actif immobilise immobilisations incorporelles corporelles financieres actif circulant stocks creances disponibilites">
+        <table>
+          <caption>Tableau 10.1 — Le détail de l'actif</caption>
+          <thead><tr><th>Poste</th><th>Contenu</th><th>Nature</th></tr></thead>
+          <tbody>
+            <tr><td><b>Immobilisations incorporelles</b></td><td>Fonds de commerce, brevets, licences, logiciels</td><td rowspan="3">Actif <b>immobilisé</b> : biens durables (&gt; 1 an)</td></tr>
+            <tr><td><b>Immobilisations corporelles</b></td><td>Terrains, locaux, machines, matériel, véhicules</td></tr>
+            <tr><td><b>Immobilisations financières</b></td><td>Titres de participation, cautions, prêts accordés</td></tr>
+            <tr><td><b>Stocks</b></td><td>Marchandises, matières premières, produits finis</td><td rowspan="3">Actif <b>circulant</b> : a vocation à « tourner » rapidement</td></tr>
+            <tr><td><b>Créances clients</b></td><td>Factures émises mais pas encore encaissées</td></tr>
+            <tr><td><b>Disponibilités</b></td><td>Trésorerie : comptes bancaires, caisse</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">L'amortissement</b>Les immobilisations se déprécient avec le temps : on étale leur coût en charges sur leur durée d'usage, c'est l'<b>amortissement</b>. Une machine à 50 000 € amortie sur 5 ans génère 10 000 €/an de charge — qui réduit le bénéfice imposable <b>sans sortie de trésorerie</b>. L'amortissement est une charge « comptable », pas un décaissement.</div></div>
+    </div>
+
+    <h3 class="section" id="c2s2" data-crumb="10.2.2 Le passif">Le passif : d'où vient l'argent</h3>
+    <div class="notion-card" data-search="passif capitaux propres capital social reserves resultat report dettes financieres fournisseurs fiscales sociales solvabilite">
+      <div class="table-wrap" data-search="passif capitaux propres capital reserves resultat dettes financieres fournisseurs fiscales sociales">
+        <table>
+          <caption>Tableau 10.2 — Le détail du passif</caption>
+          <thead><tr><th>Poste</th><th>Contenu</th><th>Nature</th></tr></thead>
+          <tbody>
+            <tr><td><b>Capital social</b></td><td>Apports initiaux des associés</td><td rowspan="3"><b>Capitaux propres</b> : les fonds « maison » (ne se remboursent pas)</td></tr>
+            <tr><td><b>Réserves</b></td><td>Bénéfices des années passées non distribués</td></tr>
+            <tr><td><b>Résultat de l'exercice</b></td><td>Bénéfice (ou perte) de l'année</td></tr>
+            <tr><td><b>Dettes financières</b></td><td>Emprunts bancaires, comptes courants d'associés</td><td rowspan="3"><b>Dettes</b> : à rembourser à des tiers</td></tr>
+            <tr><td><b>Dettes fournisseurs</b></td><td>Factures reçues pas encore payées</td></tr>
+            <tr><td><b>Dettes fiscales &amp; sociales</b></td><td>TVA, impôts, cotisations à reverser</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Les <b>capitaux propres</b> sont le « matelas » de l'entreprise : plus ils sont élevés par rapport aux dettes, plus elle est <b>solide</b> et autonome. Des capitaux propres <b>négatifs</b> (pertes cumulées &gt; capital) sont un signal d'alerte majeur : l'entreprise a « mangé » son capital.</div></div>
+    </div>
+
+    <h3 class="section" id="c2s3" data-crumb="10.2.3 Lire un bilan">Lire un bilan : trésorerie, BFR, fonds de roulement</h3>
+    <div class="notion-card" data-search="fonds de roulement BFR besoin en fonds de roulement tresorerie nette delais clients fournisseurs stocks equilibre financier">
+      <p>Au-delà des postes, trois notions révèlent l'<b>équilibre financier</b> :</p>
+      <div class="table-wrap compact" data-search="fonds de roulement FR BFR besoin fonds roulement tresorerie nette formule definition">
+        <table>
+          <thead><tr><th>Notion</th><th>Définition simple</th></tr></thead>
+          <tbody>
+            <tr><td><b>Fonds de roulement (FR)</b></td><td>Ressources stables − actif immobilisé : le « coussin » disponible pour financer l'exploitation</td></tr>
+            <tr><td><b>Besoin en fonds de roulement (BFR)</b></td><td>Stocks + créances clients − dettes fournisseurs : l'argent <b>immobilisé</b> par le cycle d'exploitation</td></tr>
+            <tr><td><b>Trésorerie nette</b></td><td>FR − BFR : ce qui reste réellement en banque</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège — le BFR tue les jeunes entreprises</b>Une activité peut être <b>rentable mais manquer de trésorerie</b> si elle paie ses fournisseurs avant d'encaisser ses clients (BFR élevé). Exemple : vous payez vos matières à 30 jours mais vos clients vous règlent à 90 jours → vous avancez 60 jours de trésorerie. Une croissance rapide <b>aggrave</b> le BFR. Beaucoup de faillites ne sont pas dues à un manque de bénéfices mais à un <b>manque de cash</b>.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 3 ============ -->
+    <h2 class="chapter" id="c3" data-crumb="10.3 Le compte de résultat">Le compte de résultat</h2>
+    <div class="notion-card" data-search="compte de resultat produits charges chiffre affaires resultat exploitation financier exceptionnel net benefice perte">
+      <p class="def"><b>Compte de résultat.</b> Récapitule sur l'exercice tous les <b>produits</b> (ce que l'entreprise a gagné) et toutes les <b>charges</b> (ce qu'elle a dépensé). La différence est le <b>résultat net</b> : bénéfice si positif, perte si négatif.</p>
+      <div class="calc" data-search="exemple compte resultat chiffre affaires charges achats salaires resultat net cascade">
+        <div class="row"><span class="lbl">Chiffre d'affaires (ventes)</span><span class="val">500 000 €</span></div>
+        <div class="row"><span class="lbl">− Achats &amp; charges externes</span><span class="val">−220 000 €</span></div>
+        <div class="row"><span class="lbl">− Charges de personnel (salaires + cotisations)</span><span class="val">−180 000 €</span></div>
+        <div class="row"><span class="lbl">− Impôts &amp; taxes</span><span class="val">−10 000 €</span></div>
+        <div class="row"><span class="lbl">= Excédent brut d'exploitation (EBE)</span><span class="val">90 000 €</span></div>
+        <div class="row"><span class="lbl">− Dotations aux amortissements</span><span class="val">−25 000 €</span></div>
+        <div class="row"><span class="lbl">= Résultat d'exploitation</span><span class="val">65 000 €</span></div>
+        <div class="row"><span class="lbl">− Charges financières (intérêts d'emprunt)</span><span class="val">−8 000 €</span></div>
+        <div class="row"><span class="lbl">− Impôt sur les sociétés</span><span class="val">−8 550 €</span></div>
+        <div class="row total"><span class="lbl">= Résultat net</span><span class="val">48 450 €</span></div>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Le résultat se lit en <b>cascade</b> : du chiffre d'affaires, on retranche progressivement les charges pour aboutir au résultat net. Chaque étage répond à une question : l'exploitation est-elle rentable ? Le poids de la dette ? L'impôt ? C'est plus instructif que le seul résultat final.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 4 ============ -->
+    <h2 class="chapter" id="c4" data-crumb="10.4 Lire &amp; analyser">Lire &amp; analyser les comptes</h2>
+
+    <h3 class="section" id="c4s1" data-crumb="10.4.1 Les SIG">Les soldes intermédiaires de gestion</h3>
+    <div class="notion-card" data-search="SIG soldes intermediaires gestion marge commerciale valeur ajoutee EBE EBITDA resultat exploitation capacite autofinancement">
+      <p>Les <b>SIG</b> décomposent la formation du résultat en paliers significatifs. Trois sont à connaître absolument :</p>
+      <div class="table-wrap" data-search="marge commerciale valeur ajoutee EBE EBITDA capacite autofinancement definition utilite">
+        <table>
+          <caption>Tableau 10.3 — Les soldes à retenir</caption>
+          <thead><tr><th>Solde</th><th>Ce qu'il mesure</th></tr></thead>
+          <tbody>
+            <tr><td><b>Marge commerciale</b></td><td>Ventes − coût d'achat des marchandises : la marge « brute » du négoce</td></tr>
+            <tr><td><b>Valeur ajoutée</b></td><td>Richesse créée par l'entreprise (avant de rémunérer travail, capital, État)</td></tr>
+            <tr><td><b>EBE / EBITDA</b></td><td>Excédent Brut d'Exploitation : la <b>rentabilité du cœur de métier</b>, avant amortissements, intérêts et impôts. L'indicateur préféré des analystes.</td></tr>
+            <tr><td><b>Résultat d'exploitation</b></td><td>EBE − amortissements/provisions : performance après usure des outils</td></tr>
+            <tr><td><b>Capacité d'autofinancement (CAF)</b></td><td>Le cash que l'activité dégage réellement pour investir/rembourser</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>L'<b>EBE (EBITDA)</b> est le juge de paix : il isole la rentabilité de l'exploitation, indépendamment de la structure financière (dette) et de la politique d'amortissement. Deux entreprises au même résultat net peuvent avoir des EBE très différents — l'une saine, l'autre maquillée par des éléments exceptionnels.</div></div>
+    </div>
+
+    <h3 class="section" id="c4s2" data-crumb="10.4.2 Les ratios clés">Les ratios qui parlent</h3>
+    <div class="table-wrap" data-search="ratios marge nette rentabilite ROE ROCE solvabilite gearing endettement liquidite autonomie financiere">
+      <table>
+        <caption>Tableau 10.4 — Les ratios essentiels</caption>
+        <thead><tr><th>Ratio</th><th>Formule</th><th>Ce qu'il révèle</th></tr></thead>
+        <tbody>
+          <tr><td><b>Taux de marge nette</b></td><td>Résultat net ÷ CA</td><td>Combien de bénéfice pour 100 € vendus</td></tr>
+          <tr><td><b>Rentabilité des capitaux (ROE)</b></td><td>Résultat net ÷ capitaux propres</td><td>Ce que rapporte l'argent investi par les associés</td></tr>
+          <tr><td><b>Autonomie financière</b></td><td>Capitaux propres ÷ total bilan</td><td>Indépendance vis-à-vis des banques</td></tr>
+          <tr><td><b>Gearing (endettement)</b></td><td>Dettes financières ÷ capitaux propres</td><td>Poids de la dette (&gt; 1 = endettement élevé)</td></tr>
+          <tr><td><b>Liquidité générale</b></td><td>Actif circulant ÷ dettes court terme</td><td>Capacité à payer ses échéances (&gt; 1 souhaitable)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>Un ratio isolé ne dit rien : il se lit dans le <b>temps</b> (évolution sur 3 ans) et par rapport au <b>secteur</b> (une marge de 5 % est excellente en grande distribution, faible dans le logiciel). Toujours comparer à des références pertinentes.</div></div>
+
+    <!-- ============ CHAPITRE 5 ============ -->
+    <h2 class="chapter" id="c5" data-crumb="10.5 Ce qui fait la rentabilité">Ce qui fait la rentabilité</h2>
+    <div class="notion-card" data-search="rentabilite marge rotation levier seuil de rentabilite point mort charges fixes variables effet de levier ROE ROCE">
+      <p>La rentabilité d'une entreprise repose sur trois leviers que l'on peut actionner :</p>
+      <div class="grid cols-3">
+        <div class="mini" data-search="marge prix cout valeur difference vente"><h5>1. La marge</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">L'écart entre le prix de vente et le coût de revient. Augmenter les prix ou réduire les coûts.</p></div>
+        <div class="mini" data-search="rotation volume vitesse stock capital chiffre affaires"><h5>2. La rotation</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">La vitesse à laquelle on « fait tourner » le capital (ventes ÷ actifs). Vendre plus avec les mêmes moyens.</p></div>
+        <div class="mini" data-search="levier dette financier emprunt amplification rentabilite fonds propres"><h5>3. Le levier</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Utiliser la dette pour amplifier la rentabilité des fonds propres — tant que le rendement &gt; coût de la dette.</p></div>
+      </div>
+    </div>
+
+    <div class="notion-card" data-search="seuil de rentabilite point mort charges fixes variables chiffre affaires benefice perte">
+      <h4 class="notion" id="seuil">Le seuil de rentabilité (point mort)</h4>
+      <p class="def"><b>Seuil de rentabilité.</b> Chiffre d'affaires à partir duquel l'entreprise couvre toutes ses charges et commence à gagner de l'argent. En dessous, elle perd ; au-dessus, elle gagne.</p>
+      <div class="figure" data-search="schema seuil rentabilite point mort charges fixes variables chiffre affaires benefice perte">
+        <svg viewBox="0 0 460 230" role="img" aria-label="Seuil de rentabilité">
+          <style>.axx{stroke:var(--border-strong);stroke-width:1.4}.ca{stroke:var(--accent);stroke-width:2.5;fill:none}.ct{stroke:#c2410c;stroke-width:2.5;fill:none}.cf{stroke:#94a3b8;stroke-width:1.6;stroke-dasharray:5 4;fill:none}.lab{font:10.5px var(--font-sans);fill:var(--text-soft)}.pt{fill:var(--ok)}</style>
+          <line class="axx" x1="44" y1="190" x2="440" y2="190"/><line class="axx" x1="44" y1="20" x2="44" y2="190"/>
+          <text class="lab" x="380" y="205">Activité →</text>
+          <line class="cf" x1="44" y1="150" x2="440" y2="150"/><text class="lab" x="300" y="145">Charges fixes</text>
+          <path class="ct" d="M44 150 L440 70"/><text class="lab" x="360" y="66" fill="#c2410c">Charges totales</text>
+          <path class="ca" d="M44 190 L440 30"/><text class="lab" x="360" y="40" fill="var(--accent)">Chiffre d'affaires</text>
+          <circle class="pt" cx="232" cy="110" r="6"/><text class="lab" x="150" y="104" fill="var(--ok)">Seuil de rentabilité</text>
+          <text class="lab" x="90" y="170">zone de perte</text><text class="lab" x="330" y="150">zone de profit</text>
+        </svg>
+        <figcaption>Au point d'intersection des charges totales et du chiffre d'affaires, l'entreprise atteint son point mort.</figcaption>
+      </div>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Exemple chiffré</b>Charges fixes 120 000 €/an (loyer, salaires fixes). Taux de marge sur coûts variables 40 %. Seuil de rentabilité = 120 000 ÷ 40 % = <b>300 000 € de CA</b>. En dessous de 300 000 € de ventes, l'entreprise perd ; chaque euro vendu au-delà génère 0,40 € de profit. Connaître son point mort, c'est savoir <b>combien il faut vendre pour survivre</b>.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 6 ============ -->
+    <h2 class="chapter" id="c6" data-crumb="10.6 Vital pour l'indépendant">Notions vitales pour un futur indépendant</h2>
+    <div class="notion-card" data-search="independant tresorerie benefice TVA collectee deductible amortissement provision autofinancement separer comptes previsionnel">
+      <ul>
+        <li><b>Trésorerie ≠ bénéfice.</b> Avoir de l'argent sur le compte ne veut pas dire être rentable (et inversement). On peut être bénéficiaire et en cessation de paiement à cause du BFR. <b>Surveiller le cash en priorité.</b></li>
+        <li><b>La TVA n'est pas à vous.</b> La TVA collectée sur vos ventes appartient à l'État : vous la reversez (après déduction de la TVA payée sur vos achats). La provisionner, ne jamais la « consommer ».</li>
+        <li><b>L'amortissement</b> réduit l'impôt sans sortie de cash : c'est un allié pour investir. Mais il ne « met pas d'argent de côté » — la trésorerie, elle, doit être gérée à part.</li>
+        <li><b>Les provisions</b> anticipent une charge ou un risque futur (impayé, litige) : prudence comptable.</li>
+        <li><b>L'autofinancement (CAF)</b> mesure la capacité à investir et rembourser par ses propres moyens — la vraie autonomie.</li>
+        <li><b>Séparer strictement</b> comptes pro et perso ; tenir un <b>prévisionnel de trésorerie</b> ; s'entourer d'un <b>expert-comptable</b> dès le départ.</li>
+      </ul>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">La règle d'or du débutant</b>« Le chiffre d'affaires est de la vanité, le bénéfice est de la raison, la <b>trésorerie est la réalité</b>. » On ne dépose pas le bilan parce qu'on n'est pas rentable un mois donné, mais parce qu'on ne peut plus <b>payer</b> ses échéances. Piloter le cash avant tout.</div></div>
+    </div>
+
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Synthèse de la partie</b>Le <b>bilan</b> dit si l'entreprise est <b>solide</b> (capitaux propres, endettement, trésorerie) ; le <b>compte de résultat</b> dit si elle est <b>performante</b> (marge, EBE, résultat). La rentabilité se construit par la <b>marge</b>, la <b>rotation</b> et le <b>levier</b>, et se sécurise en connaissant son <b>seuil de rentabilité</b> et en pilotant son <b>BFR</b> et sa <b>trésorerie</b>. Ces fondamentaux éclairent aussi l'analyse d'une société à reprendre ou à valoriser (Partie 11).</div></div>
+
+    <nav class="part-nav">
+      <a class="prev" href="index.html"><small>Partie précédente</small><b>← 9 · Sociétés</b></a>
+      <a class="next" href="index.html"><small>Partie suivante</small><b>11 · Transmission d'entreprise →</b></a>
+    </nav>
+
+    <div class="foot"><p class="disclaimer"><b>⚠️ Avertissement.</b> Présentation pédagogique simplifiée du plan comptable. Les obligations et traitements réels dépendent du régime et de la taille de l'entreprise ; consulter un expert-comptable. Contenu non constitutif d'un conseil personnalisé.</p></div>
+
+  </div>
+  </main>
+</div>
+
+<button id="toTop" title="Retour en haut" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/encyclo.js"></script>
+</body>
+</html>

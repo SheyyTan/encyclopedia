@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partie 2 — Fiscalité du patrimoine · Encyclopédie du Patrimoine</title>
+<meta name="description" content="IR et quotient familial, PFU/flat tax, prélèvements sociaux, IFI, IS, plus-values mobilières et immobilières. Calculs détaillés, articles CGI.">
+<link rel="stylesheet" href="assets/encyclo.css">
+</head>
+<body data-part="2">
+<div id="progress"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" aria-label="Sommaire"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a class="brand" href="index.html" style="color:inherit">
+    <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#4338ca"/><path d="M9 22V10l7 5 7-5v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Encyclopédie du Patrimoine<small>Partie 2 · Fiscalité</small></span>
+  </a>
+  <div class="spacer"></div>
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="searchInput" type="search" placeholder="Rechercher dans cette partie…  ( / )" autocomplete="off" aria-label="Recherche">
+  </div>
+  <button class="icon-btn" id="themeToggle" title="Basculer clair / sombre" aria-label="Thème">
+    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>Partie 2 — Sommaire</h4>
+    <nav>
+      <ul class="toc">
+        <li><a href="#c1">2.1 · Impôt sur le revenu</a></li>
+        <li><a class="lvl3" href="#c1s1">2.1.1 Barème &amp; TMI</a></li>
+        <li><a class="lvl3" href="#c1s2">2.1.2 Quotient familial</a></li>
+        <li><a class="lvl3" href="#c1s3">2.1.3 Décote &amp; calcul complet</a></li>
+        <li><a href="#c2">2.2 · Revenus catégoriels</a></li>
+        <li><a href="#c3">2.3 · PFU / flat tax</a></li>
+        <li><a class="lvl3" href="#c3s1">2.3.1 Mécanique du PFU</a></li>
+        <li><a class="lvl3" href="#c3s2">2.3.2 Arbitrage PFU / barème</a></li>
+        <li><a href="#c4">2.4 · Prélèvements sociaux</a></li>
+        <li><a href="#c5">2.5 · IFI</a></li>
+        <li><a class="lvl3" href="#c5s1">2.5.1 Assiette &amp; passif</a></li>
+        <li><a class="lvl3" href="#c5s2">2.5.2 Barème &amp; plafonnement</a></li>
+        <li><a href="#c6">2.6 · IR vs IS</a></li>
+        <li><a href="#c7">2.7 · Plus-values</a></li>
+        <li><a class="lvl3" href="#c7s1">2.7.1 PV mobilières</a></li>
+        <li><a class="lvl3" href="#c7s2">2.7.2 PV immobilières</a></li>
+      </ul>
+      <h4>Naviguer</h4>
+      <ul class="toc">
+        <li><a href="partie-1-bancaire.html">← Partie 1 · Bancaire</a></li>
+        <li><a href="index.html">Sommaire général</a></li>
+        <li><a href="partie-3-enveloppes.html">Partie 3 · Enveloppes →</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="scrim"></div>
+
+  <main class="content" style="--partno:'2'">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a><span class="sep">/</span>
+      <a href="partie-2-fiscalite.html">Partie 2</a><span class="sep">/</span>
+      <span id="crumb-current">Fiscalité</span>
+    </nav>
+
+    <section class="part-hero" data-crumb="Partie 2">
+      <svg class="hero-art" viewBox="0 0 200 200" fill="none"><path d="M60 30h80l-8 30H68zM50 60h100l-10 110H60zM85 90v60M115 90v60" stroke="#fff" stroke-width="3"/></svg>
+      <div class="eyebrow">Partie 2</div>
+      <h1>Fiscalité du patrimoine</h1>
+      <p>Le socle transversal qui détermine la rentabilité nette de toute stratégie : impôt sur le revenu et quotient familial, flat tax, prélèvements sociaux, IFI, impôt sur les sociétés et plus-values. Tous les calculs sont déroulés ligne à ligne.</p>
+    </section>
+
+    <p class="lead">Aucune décision patrimoniale ne se juge en brut. C'est la fiscalité qui transforme un rendement affiché en rendement <b>net</b>, et c'est elle qui crée la valeur des enveloppes (assurance-vie, PEA, PER). Cette partie est la <b>boîte à outils de calcul</b> mobilisée dans toutes les suivantes.</p>
+
+    <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Référence des barèmes</b>Les valeurs ci-dessous correspondent au barème en vigueur pour l'imposition des <b>revenus 2025</b> (déclaration 2026), après réindexation par la LF 2026. L'indexation annuelle décale légèrement les tranches : <b>vérifier les seuils définitifs</b> sur Légifrance / BOFiP <span class="ref">art. 197 CGI</span>.</div></div>
+
+    <!-- ============ CHAPITRE 1 ============ -->
+    <h2 class="chapter" id="c1" data-crumb="2.1 Impôt sur le revenu">Impôt sur le revenu (IR)</h2>
+
+    <h3 class="section" id="c1s1" data-crumb="2.1.1 Barème &amp; TMI">Barème progressif &amp; taux marginal</h3>
+    <div class="notion-card" data-search="bareme IR tranches progressivite TMI taux marginal taux moyen revenu imposable quotient">
+      <h4 class="notion">Barème progressif par tranches</h4>
+      <p class="def"><b>Barème progressif.</b> L'IR s'applique par tranches au <b>quotient</b> (revenu net imposable ÷ nombre de parts). Chaque euro n'est imposé qu'au taux de sa tranche : le <b>taux marginal (TMI)</b> ne frappe que la fraction supérieure, pas l'ensemble du revenu.</p>
+      <div class="table-wrap" data-search="bareme 2026 revenus 2025 tranches 11 30 41 45 pourcent">
+        <table>
+          <caption>Tableau 2.1 — Barème IR par part (revenus 2025, indicatif après réindexation)</caption>
+          <thead><tr><th>Tranche de revenu par part</th><th class="num">Taux (TMI)</th></tr></thead>
+          <tbody>
+            <tr><td>Jusqu'à 11 497 €</td><td class="num">0 %</td></tr>
+            <tr><td>De 11 498 € à 29 315 €</td><td class="num">11 %</td></tr>
+            <tr><td>De 29 316 € à 83 823 €</td><td class="num">30 %</td></tr>
+            <tr><td>De 83 824 € à 180 294 €</td><td class="num">41 %</td></tr>
+            <tr><td>Au-delà de 180 294 €</td><td class="num">45 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Distinguer <b>TMI</b> (taux de la dernière tranche atteinte, qui sert à arbitrer toute décision marginale : un revenu supplémentaire, une déduction) et <b>taux moyen</b> (IR ÷ revenu, toujours inférieur). On raisonne les arbitrages patrimoniaux <b>à la TMI</b>.</div></div>
+    </div>
+
+    <h3 class="section" id="c1s2" data-crumb="2.1.2 Quotient familial">Quotient familial &amp; plafonnement</h3>
+    <div class="notion-card" data-search="quotient familial parts demi-part plafonnement avantage enfant a charge 197 CGI">
+      <p class="def"><b>Quotient familial.</b> Mécanisme de prise en compte des charges de famille : le revenu est divisé par un nombre de <b>parts</b> (1 célibataire, 2 couple, +0,5 par enfant, +1 au 3ᵉ enfant…). L'avantage qu'il procure est <b>plafonné</b> par demi-part <span class="ref">art. 197 CGI</span>.</p>
+      <div class="table-wrap compact" data-search="nombre de parts celibataire marie pacse enfants veuf">
+        <table>
+          <caption>Tableau 2.2 — Nombre de parts (cas courants)</caption>
+          <thead><tr><th>Situation</th><th class="num">Parts</th></tr></thead>
+          <tbody>
+            <tr><td>Célibataire sans enfant</td><td class="num">1</td></tr>
+            <tr><td>Couple marié / pacsé</td><td class="num">2</td></tr>
+            <tr><td>Couple + 1 enfant</td><td class="num">2,5</td></tr>
+            <tr><td>Couple + 2 enfants</td><td class="num">3</td></tr>
+            <tr><td>Couple + 3 enfants</td><td class="num">4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>L'avantage de quotient familial est <b>plafonné</b> (ordre de grandeur ≈ 1 790 € par demi-part supplémentaire). Au-delà d'un certain revenu, un enfant supplémentaire ne réduit plus l'IR au-delà de ce plafond : ne pas surestimer le gain fiscal des parts pour les hauts revenus.</div></div>
+    </div>
+
+    <h3 class="section" id="c1s3" data-crumb="2.1.3 Décote &amp; calcul complet">Décote &amp; calcul complet déroulé</h3>
+    <div class="notion-card" data-search="calcul IR exemple detaille couple deux enfants quotient impot tranche par tranche decote">
+      <h4 class="notion">Cas pratique : couple, 2 enfants, 90 000 € imposables</h4>
+      <p>Foyer : couple marié, 2 enfants → <b>3 parts</b>. Revenu net imposable : <b>90 000 €</b>. Quotient = 90 000 ÷ 3 = <b>30 000 €</b> par part.</p>
+      <div class="calc" data-search="calcul detaille impot par part tranches">
+        <div class="row"><span class="lbl">Tranche 0 % : 0 → 11 497 €</span><span class="val">0,00 €</span></div>
+        <div class="row"><span class="lbl">Tranche 11 % : (29 315 − 11 497) × 11 %</span><span class="val">1 959,98 €</span></div>
+        <div class="row"><span class="lbl">Tranche 30 % : (30 000 − 29 315) × 30 %</span><span class="val">205,50 €</span></div>
+        <div class="row total"><span class="lbl">Impôt par part</span><span class="val">2 165,48 €</span></div>
+        <div class="row"><span class="lbl">× 3 parts</span><span class="val">6 496,44 €</span></div>
+        <div class="row total"><span class="lbl">IR brut du foyer (avant décote)</span><span class="val">≈ 6 496 €</span></div>
+      </div>
+      <p>Taux moyen ≈ 6 496 / 90 000 = <b>7,2 %</b> ; TMI = <b>30 %</b>. À comparer : le même revenu pour un célibataire (1 part) donnerait un quotient de 90 000 € et un IR bien supérieur — la mesure de l'effet du quotient familial.</p>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Lecture conseil</b>Avec une TMI à 30 %, chaque euro de déduction (PER, déficit foncier) « rapporte » 30 c d'IR + potentiellement des PS. C'est ce chiffre — la TMI — qui rend une déduction attractive ou non, jamais le taux moyen.</div></div>
+    </div>
+
+    <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Compléments</b><b>Décote</b> (réduction pour les IR modestes) et <b>CEHR</b> (Contribution Exceptionnelle sur les Hauts Revenus, 3 % / 4 % au-delà de 250 k€ / 500 k€ de RFR pour un couple) <span class="ref">art. 223 sexies CGI</span> ajustent l'IR aux extrémités du barème.</div></div>
+
+    <!-- ============ CHAPITRE 2 ============ -->
+    <h2 class="chapter" id="c2" data-crumb="2.2 Revenus catégoriels">Les catégories de revenus</h2>
+    <p data-search="categories revenus traitements salaires RCM revenus capitaux mobiliers fonciers BIC BNC plus-values">L'IR frappe un revenu global composé de <b>catégories</b> aux règles propres. Chaque enveloppe et chaque actif patrimonial « atterrit » dans l'une d'elles, ce qui détermine son traitement.</p>
+    <div class="table-wrap" data-search="tableau categories revenus RCM RF BIC BNC TS plus-values regime imposition">
+      <table>
+        <caption>Tableau 2.3 — Catégories de revenus &amp; régime dominant</caption>
+        <thead><tr><th>Catégorie</th><th>Exemples patrimoniaux</th><th>Régime dominant</th></tr></thead>
+        <tbody>
+          <tr><td><b>TS</b> — Traitements &amp; salaires</td><td>Salaires, rentes, pensions</td><td>Barème (abattement 10 %)</td></tr>
+          <tr><td><b>RCM</b> — Revenus de capitaux mobiliers</td><td>Dividendes, intérêts, coupons</td><td>PFU 30 % (ou barème)</td></tr>
+          <tr><td><b>RF</b> — Revenus fonciers</td><td>Loyers nus</td><td>Barème + PS (micro ou réel)</td></tr>
+          <tr><td><b>BIC</b></td><td>Location meublée (LMNP/LMP)</td><td>Micro-BIC ou réel</td></tr>
+          <tr><td><b>BNC</b></td><td>Professions libérales, droits d'auteur</td><td>Micro-BNC ou déclaratif</td></tr>
+          <tr><td><b>PV</b> — Plus-values</td><td>Cession titres / immobilier</td><td>Régimes spécifiques (§ 2.7)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>La <b>qualification catégorielle</b> commande tout : un même bien immobilier loué <b>nu</b> (revenus fonciers, barème) ou <b>meublé</b> (BIC, amortissable) a une fiscalité radicalement différente. Voir Partie 5.</div></div>
+
+    <!-- ============ CHAPITRE 3 ============ -->
+    <h2 class="chapter" id="c3" data-crumb="2.3 PFU / flat tax">PFU — le prélèvement forfaitaire unique</h2>
+
+    <h3 class="section" id="c3s1" data-crumb="2.3.1 Mécanique du PFU">Mécanique de la « flat tax »</h3>
+    <div class="notion-card" data-search="PFU flat tax 30 12.8 17.2 prelevement forfaitaire unique dividendes interets plus-values 200 A CGI">
+      <p class="def"><b>PFU (flat tax).</b> Taux forfaitaire global de <b>30 %</b> sur la plupart des revenus du capital, décomposé en <b>12,8 % d'IR</b> + <b>17,2 % de prélèvements sociaux</b> <span class="ref">art. 200 A CGI</span>. S'applique par défaut aux dividendes, intérêts et plus-values mobilières.</p>
+      <div class="figure">
+        <svg viewBox="0 0 480 120" role="img" aria-label="Décomposition du PFU 30%">
+          <style>.b1{fill:#4338ca}.b2{fill:#7c8cf8}.tx{font:600 13px var(--font-sans);fill:#fff}.tl{font:12px var(--font-sans);fill:var(--text-soft)}</style>
+          <rect class="b1" x="20" y="30" width="180" height="44" rx="8"/><text x="110" y="58" text-anchor="middle" class="tx">IR 12,8 %</text>
+          <rect class="b2" x="206" y="30" width="254" height="44" rx="8"/><text x="333" y="58" text-anchor="middle" class="tx">Prélèvements sociaux 17,2 %</text>
+          <text x="240" y="100" text-anchor="middle" class="tl">PFU total = 30 %</text>
+        </svg>
+      </div>
+    </div>
+
+    <h3 class="section" id="c3s2" data-crumb="2.3.2 Arbitrage PFU / barème">Arbitrage PFU vs option barème</h3>
+    <div class="notion-card" data-search="option bareme global dividendes abattement 40 CSG deductible 6.8 arbitrage TMI faible">
+      <p>Le contribuable peut <b>opter pour le barème</b> (option globale, annuelle, sur tous les revenus mobiliers). Cette option n'est avantageuse qu'à <b>TMI faible</b> (0 % ou 11 %), et ouvre, pour les <b>dividendes</b>, un <b>abattement de 40 %</b> <span class="ref">art. 158-3 CGI</span> et la <b>déductibilité partielle de la CSG</b> (6,8 %).</p>
+      <div class="table-wrap" data-search="comparaison PFU bareme dividende TMI 11 30 41 seuil arbitrage">
+        <table>
+          <caption>Tableau 2.4 — PFU vs barème sur 10 000 € de dividendes</caption>
+          <thead><tr><th>TMI</th><th class="num">PFU (30 %)</th><th class="num">Barème (abatt. 40 %) + PS</th><th>Choix optimal</th></tr></thead>
+          <tbody>
+            <tr><td>0 %</td><td class="num">3 000 €</td><td class="num">≈ 1 720 € (PS seuls)</td><td><span class="pill ok">Barème</span></td></tr>
+            <tr><td>11 %</td><td class="num">3 000 €</td><td class="num">≈ 2 380 €</td><td><span class="pill ok">Barème</span></td></tr>
+            <tr><td>30 %</td><td class="num">3 000 €</td><td class="num">≈ 3 520 €</td><td><span class="pill danger">PFU</span></td></tr>
+            <tr><td>41 %</td><td class="num">3 000 €</td><td class="num">≈ 4 180 €</td><td><span class="pill danger">PFU</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>L'option barème est <b>globale et irrévocable</b> pour l'année : elle s'applique à <i>tous</i> les revenus mobiliers du foyer (intérêts, dividendes, plus-values). Optimiser les dividendes au barème peut alors <b>pénaliser</b> les plus-values de cession de la même année. Simuler sur l'ensemble.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 4 ============ -->
+    <h2 class="chapter" id="c4" data-crumb="2.4 Prélèvements sociaux">Prélèvements sociaux (17,2 %)</h2>
+    <div class="notion-card" data-search="prelevements sociaux 17.2 CSG CRDS prelevement solidarite CSG deductible 6.8 revenus du capital">
+      <p class="def"><b>Prélèvements sociaux à 17,2 %.</b> Frappent les revenus du capital (mobiliers, fonciers, plus-values). Décomposition : CSG 9,2 % + CRDS 0,5 % + prélèvement de solidarité 7,5 %.</p>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>En cas d'imposition au <b>barème</b> (et non au PFU), une fraction de la <b>CSG est déductible à hauteur de 6,8 %</b> du revenu global de l'année suivante : un effet de second tour qui améliore l'option barème pour les TMI élevées sur les revenus fonciers.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 5 ============ -->
+    <h2 class="chapter" id="c5" data-crumb="2.5 IFI">Impôt sur la Fortune Immobilière (IFI)</h2>
+
+    <h3 class="section" id="c5s1" data-crumb="2.5.1 Assiette &amp; passif">Assiette, abattements &amp; passif déductible</h3>
+    <div class="notion-card" data-search="IFI patrimoine immobilier net 1.3 million seuil residence principale abattement 30 passif dette deductible 964 965 CGI">
+      <p class="def"><b>IFI.</b> Impôt annuel sur le <b>patrimoine immobilier net</b> du foyer fiscal supérieur à <b>1 300 000 €</b> au 1ᵉʳ janvier <span class="ref">art. 964 s. CGI</span>. Seul l'immobilier est taxé (l'ISF sur le patrimoine global a été supprimé en 2018).</p>
+      <ul>
+        <li><b>Dans l'assiette</b> : biens bâtis et non bâtis, parts de SCI, fraction immobilière des SCPI/OPCI et unités de compte immobilières d'assurance-vie.</li>
+        <li><b>Abattement de 30 %</b> sur la <b>résidence principale</b> <span class="ref">art. 973 CGI</span>.</li>
+        <li><b>Passif déductible</b> : emprunts immobiliers (avec retraitement des prêts <i>in fine</i>), travaux, taxe foncière.</li>
+        <li><b>Hors assiette</b> : biens affectés à l'activité professionnelle, et la plupart des actifs financiers non immobiliers.</li>
+      </ul>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>Le seuil de <b>1,3 M€</b> est un seuil de <b>déclenchement</b>, mais une fois franchi, le barème s'applique <b>dès 800 000 €</b>. Un patrimoine de 1,3 M€ est donc taxé sur la tranche 800 k€–1,3 M€, pas seulement sur l'excédent au-dessus de 1,3 M€.</div></div>
+    </div>
+
+    <h3 class="section" id="c5s2" data-crumb="2.5.2 Barème &amp; plafonnement">Barème &amp; plafonnement</h3>
+    <div class="table-wrap" data-search="bareme IFI tranches 0 0.5 0.7 1 1.25 1.5 plafonnement 75 revenus">
+      <table>
+        <caption>Tableau 2.5 — Barème IFI <span class="ref">art. 977 CGI</span></caption>
+        <thead><tr><th>Fraction de la valeur nette taxable</th><th class="num">Taux</th></tr></thead>
+        <tbody>
+          <tr><td>≤ 800 000 €</td><td class="num">0 %</td></tr>
+          <tr><td>800 000 € → 1 300 000 €</td><td class="num">0,50 %</td></tr>
+          <tr><td>1 300 000 € → 2 570 000 €</td><td class="num">0,70 %</td></tr>
+          <tr><td>2 570 000 € → 5 000 000 €</td><td class="num">1,00 %</td></tr>
+          <tr><td>5 000 000 € → 10 000 000 €</td><td class="num">1,25 %</td></tr>
+          <tr><td>&gt; 10 000 000 €</td><td class="num">1,50 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notion-card" data-search="calcul IFI exemple 2 millions residence principale abattement plafonnement 75">
+      <h4 class="notion">Cas pratique : patrimoine immobilier de 2 000 000 €</h4>
+      <p>Dont résidence principale 800 000 € (abattue de 30 % → 560 000 €) et locatif 1 200 000 €. Base taxable = 560 000 + 1 200 000 = <b>1 760 000 €</b>.</p>
+      <div class="calc">
+        <div class="row"><span class="lbl">Tranche 0,5 % : (1 300 000 − 800 000) × 0,5 %</span><span class="val">2 500,00 €</span></div>
+        <div class="row"><span class="lbl">Tranche 0,7 % : (1 760 000 − 1 300 000) × 0,7 %</span><span class="val">3 220,00 €</span></div>
+        <div class="row total"><span class="lbl">IFI dû (avant décote/plafonnement)</span><span class="val">5 720,00 €</span></div>
+      </div>
+      <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Plafonnement</b>L'IFI + IR + PS ne peuvent excéder <b>75 % des revenus</b> de l'année précédente <span class="ref">art. 979 CGI</span> : un mécanisme clé pour les détenteurs de gros patrimoines à faibles revenus. Une <b>décote</b> existe aussi entre 1,3 et 1,4 M€.</div></div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Leviers IFI</b>Démembrement (en principe l'usufruitier est redevable sur la pleine valeur, art. 968), dette déductible, nue-propriété, donation temporaire d'usufruit à un enfant majeur, investissement dans des actifs hors assiette. Voir Parties 5 et 7.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 6 ============ -->
+    <h2 class="chapter" id="c6" data-crumb="2.6 IR vs IS">Impôt sur les sociétés &amp; arbitrage IR / IS</h2>
+    <div class="notion-card" data-search="IS impot societes 15 25 taux reduit reserve distribution SCI a l IS amortissement arbitrage">
+      <p class="def"><b>IS.</b> Impôt sur les bénéfices des sociétés : <b>15 %</b> jusqu'à 42 500 € de bénéfice (sous conditions de CA et de détention), <b>25 %</b> au-delà. Pertinent pour les SCI à l'IS, holdings et sociétés d'exploitation.</p>
+      <div class="table-wrap" data-search="comparaison SCI IR IS amortissement plus-value charges deficit transparence">
+        <table>
+          <caption>Tableau 2.6 — SCI à l'IR vs à l'IS (logique d'arbitrage)</caption>
+          <thead><tr><th>Critère</th><th>SCI à l'IR (transparente)</th><th>SCI à l'IS</th></tr></thead>
+          <tbody>
+            <tr><td>Imposition des loyers</td><td>Revenus fonciers au barème + PS</td><td>IS 15/25 % sur le résultat</td></tr>
+            <tr><td>Amortissement du bien</td><td><span class="pill danger">Non</span></td><td><span class="pill ok">Oui</span> (réduit fortement le résultat)</td></tr>
+            <tr><td>Plus-value de cession</td><td>PV des particuliers (abattements durée)</td><td>PV professionnelle (amortissements réintégrés → forte taxation)</td></tr>
+            <tr><td>Trésorerie réinvestie</td><td>Taxée même si non distribuée</td><td>Capitalise à l'IS (frottement faible)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège majeur</b>L'IS est séduisant en phase de <b>détention</b> (amortissement, faible frottement) mais <b>punitif à la sortie</b> : à la revente, les amortissements pratiqués sont réintégrés, gonflant la plus-value imposable à l'IS, sans abattement pour durée. L'option IS est <b>quasi irrévocable</b> : à n'envisager qu'avec une vision long terme claire (détention durable, pas de revente programmée).</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 7 ============ -->
+    <h2 class="chapter" id="c7" data-crumb="2.7 Plus-values">Plus-values mobilières &amp; immobilières</h2>
+
+    <h3 class="section" id="c7s1" data-crumb="2.7.1 PV mobilières">Plus-values mobilières</h3>
+    <div class="notion-card" data-search="plus-value mobiliere cession titres PFU bareme abattement duree detention titres avant 2018 150-0 A CGI">
+      <p class="def"><b>PV mobilière.</b> Gain de cession de valeurs mobilières (actions, parts, OPC) <span class="ref">art. 150-0 A CGI</span>, imposé au <b>PFU 30 %</b> par défaut. Sur option barème, un <b>abattement pour durée de détention</b> subsiste pour les titres <b>acquis avant le 1ᵉʳ janvier 2018</b> (50 % de 2 à 8 ans, 65 % au-delà).</p>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Exemple chiffré</b>PV de 40 000 € sur des titres post-2018, contribuable TMI 41 %. Au <b>PFU</b> : 40 000 × 30 % = <b>12 000 €</b>. Au barème : 40 000 × (41 % + 17,2 %) ≈ 23 280 € (pas d'abattement durée car post-2018) → le <b>PFU s'impose nettement</b>.</div></div>
+      <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Dispositifs</b>Abattement <b>fixe de 500 000 €</b> pour les dirigeants de PME partant à la retraite <span class="ref">art. 150-0 D ter CGI</span> ; report d'imposition en cas d'<b>apport-cession</b> <span class="ref">art. 150-0 B ter CGI</span> (voir Partie 8). Les moins-values s'imputent sur les plus-values de même nature sur 10 ans.</div></div>
+    </div>
+
+    <h3 class="section" id="c7s2" data-crumb="2.7.2 PV immobilières">Plus-values immobilières</h3>
+    <div class="notion-card" data-search="plus-value immobiliere abattement duree detention exoneration 22 ans 30 ans residence principale 150 U VC CGI surtaxe">
+      <p class="def"><b>PV immobilière des particuliers.</b> Imposée à <b>19 % d'IR</b> + <b>17,2 % de PS</b> <span class="ref">art. 150 U &amp; 150 VC CGI</span>, avec <b>abattements pour durée de détention distincts</b> pour l'IR et les PS.</p>
+      <div class="table-wrap" data-search="abattement duree detention IR PS exoneration 22 ans 30 ans plus-value immobiliere">
+        <table>
+          <caption>Tableau 2.7 — Abattements pour durée de détention (PV immobilière)</caption>
+          <thead><tr><th>Durée</th><th>Abattement IR (19 %)</th><th>Abattement PS (17,2 %)</th></tr></thead>
+          <tbody>
+            <tr><td>0 à 5 ans</td><td>0 %</td><td>0 %</td></tr>
+            <tr><td>6 à 21 ans</td><td>6 %/an</td><td>1,65 %/an</td></tr>
+            <tr><td>22ᵉ année</td><td>4 % → <b>exonération IR</b></td><td>1,60 %</td></tr>
+            <tr><td>23 à 30 ans</td><td><span class="pill ok">Exonéré</span></td><td>9 %/an → <b>exonération à 30 ans</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Deux horizons d'exonération : <b>22 ans</b> pour l'IR, <b>30 ans</b> pour les prélèvements sociaux. La <b>résidence principale</b> est <b>totalement exonérée</b> de PV <span class="ref">art. 150 U II-1° CGI</span>. Une <b>surtaxe</b> de 2 à 6 % frappe les PV imposables supérieures à 50 000 €.</div></div>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Exemple chiffré</b>Bien locatif vendu après <b>15 ans</b>, PV brute 100 000 €. Abattement IR = 10 ans × 6 % = 60 % → base IR 40 000 € × 19 % = <b>7 600 €</b>. Abattement PS = 10 × 1,65 % = 16,5 % → base PS 83 500 € × 17,2 % = <b>14 362 €</b>. Total ≈ <b>21 962 €</b> (hors surtaxe). L'allongement de la détention réduit fortement la note.</div></div>
+    </div>
+
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Synthèse de la partie</b>Trois réflexes : <b>(1)</b> toujours raisonner à la <b>TMI</b> et en <b>net</b> ; <b>(2)</b> le <b>PFU</b> est le régime par défaut du capital, l'option barème ne se justifie qu'à TMI basse (ou revenus fonciers, CSG déductible) ; <b>(3)</b> l'<b>IFI</b> ne frappe que l'immobilier et se pilote (démembrement, dette, enveloppes). Ces outils irriguent toutes les parties suivantes.</div></div>
+
+    <nav class="part-nav">
+      <a class="prev" href="partie-1-bancaire.html"><small>Partie précédente</small><b>← 1 · Produits bancaires</b></a>
+      <a class="next" href="partie-3-enveloppes.html"><small>Partie suivante</small><b>3 · Enveloppes financières →</b></a>
+    </nav>
+
+    <div class="foot"><p class="disclaimer"><b>⚠️ Avertissement.</b> Barèmes, taux et abattements à jour au 25/06/2026 (LF 2026, revenus 2025), sous réserve de la réindexation annuelle des tranches. Contenu pédagogique, non constitutif d'un conseil personnalisé. Vérifier les seuils définitifs (BOFiP, Légifrance).</p></div>
+
+  </div>
+  </main>
+</div>
+
+<button id="toTop" title="Retour en haut" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/encyclo.js"></script>
+</body>
+</html>

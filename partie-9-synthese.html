@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partie 9 — Synthèse, cas pratiques &amp; annexes · Encyclopédie du Patrimoine</title>
+<meta name="description" content="Cas pratiques intégrés chiffrés, arbres de décision, check-lists conseiller, glossaire technique et index des articles CGI/CMF/Code civil.">
+<link rel="stylesheet" href="assets/encyclo.css">
+<style>
+  .glossary dt{ font-weight:700; color:var(--accent-ink); margin-top:14px; }
+  .glossary dd{ margin:2px 0 0; color:var(--text-soft); font-size:14.5px; }
+  .index-grid{ columns:2; column-gap:30px; }
+  @media(max-width:760px){ .index-grid{ columns:1; } }
+  .index-grid .ix{ break-inside:avoid; margin:0 0 6px; font-size:14px; }
+  .index-grid .ix .ref{ margin-right:6px; }
+  .checklist{ list-style:none; padding:0; margin:14px 0; }
+  .checklist li{ position:relative; padding:7px 0 7px 30px; border-bottom:1px solid var(--border); font-size:14.5px; }
+  .checklist li::before{ content:"☐"; position:absolute; left:4px; top:6px; color:var(--accent); font-size:16px; }
+</style>
+</head>
+<body data-part="9">
+<div id="progress"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" aria-label="Sommaire"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a class="brand" href="index.html" style="color:inherit">
+    <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0e7490"/><path d="M9 22V10l7 5 7-5v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Encyclopédie du Patrimoine<small>Partie 9 · Synthèse &amp; annexes</small></span>
+  </a>
+  <div class="spacer"></div>
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="searchInput" type="search" placeholder="Rechercher (glossaire, index…)  ( / )" autocomplete="off" aria-label="Recherche">
+  </div>
+  <button class="icon-btn" id="themeToggle" title="Basculer clair / sombre" aria-label="Thème">
+    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>Partie 9 — Sommaire</h4>
+    <nav>
+      <ul class="toc">
+        <li><a href="#c1">9.1 · Cas pratiques intégrés</a></li>
+        <li><a class="lvl3" href="#c1s1">9.1.1 Jeune cadre dynamique</a></li>
+        <li><a class="lvl3" href="#c1s2">9.1.2 Dirigeant en cession</a></li>
+        <li><a class="lvl3" href="#c1s3">9.1.3 Couple retraité, transmission</a></li>
+        <li><a href="#c2">9.2 · Arbres de décision</a></li>
+        <li><a href="#c3">9.3 · Check-lists conseiller</a></li>
+        <li><a href="#c4">9.4 · Glossaire technique</a></li>
+        <li><a href="#c5">9.5 · Index des articles cités</a></li>
+        <li><a href="#c6">9.6 · Récap des barèmes</a></li>
+      </ul>
+      <h4>Naviguer</h4>
+      <ul class="toc">
+        <li><a href="partie-8-entreprise.html">← Partie 8 · Entreprise</a></li>
+        <li><a href="index.html">Sommaire général</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="scrim"></div>
+
+  <main class="content" style="--partno:'9'">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a><span class="sep">/</span>
+      <a href="partie-9-synthese.html">Partie 9</a><span class="sep">/</span>
+      <span id="crumb-current">Synthèse &amp; annexes</span>
+    </nav>
+
+    <section class="part-hero" data-crumb="Partie 9">
+      <svg class="hero-art" viewBox="0 0 200 200" fill="none"><path d="M40 120l40 40 80-90" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="100" cy="100" r="80" stroke="#fff" stroke-width="2" stroke-opacity=".5"/></svg>
+      <div class="eyebrow">Partie 9 + Annexes</div>
+      <h1>Synthèse, cas pratiques &amp; annexes</h1>
+      <p>L'intégration de toutes les briques précédentes sur des profils réels, des arbres de décision opérationnels, des check-lists, un glossaire et l'index complet des textes cités. La partie « praticien ».</p>
+    </section>
+
+    <p class="lead">Une stratégie patrimoniale n'est jamais un produit isolé : c'est l'<b>orchestration cohérente</b> de plusieurs leviers selon le profil, l'horizon et les objectifs du client. Les cas ci-dessous montrent comment les parties 0 à 8 s'articulent en pratique.</p>
+
+    <!-- ============ CHAPITRE 1 ============ -->
+    <h2 class="chapter" id="c1" data-crumb="9.1 Cas pratiques">Cas pratiques intégrés</h2>
+
+    <h3 class="section" id="c1s1" data-crumb="9.1.1 Jeune cadre">Cas 1 — Jeune cadre, TMI 41 %, phase de constitution</h3>
+    <div class="notion-card" data-search="cas pratique jeune cadre 35 ans TMI 41 PER PEA assurance-vie precaution allocation epargne constitution">
+      <p><b>Profil</b> : 35 ans, célibataire, 95 000 € de revenus (TMI 41 %), 40 000 € d'épargne, capacité d'épargne 1 500 €/mois. Objectif : constituer un capital, réduire l'IR.</p>
+      <div class="grid cols-2">
+        <div class="mini"><h5>Diagnostic</h5><p style="margin:0;font-size:13.5px;color:var(--text-soft)">Précaution insuffisamment structurée, aucune enveloppe de capitalisation, IR élevé non optimisé.</p></div>
+        <div class="mini"><h5>Leviers mobilisés</h5><p style="margin:0;font-size:13.5px;color:var(--text-soft)">Livret A/LDDS (précaution), <b>PER</b> (déduction TMI 41 %), <b>PEA</b> (prise de date), <b>assurance-vie</b> (souplesse).</p></div>
+      </div>
+      <div class="calc">
+        <div class="row"><span class="lbl">Coussin de précaution (Livret A + LDDS)</span><span class="val">25 000 €</span></div>
+        <div class="row"><span class="lbl">PER : 10 000 €/an → économie d'IR (41 %)</span><span class="val">−4 100 €/an</span></div>
+        <div class="row"><span class="lbl">PEA : ouverture + 8 400 €/an (ETF World)</span><span class="val">horizon &gt; 8 ans</span></div>
+        <div class="row"><span class="lbl">Assurance-vie : 300 €/mois (UC + fonds €)</span><span class="val">liquidité + transmission</span></div>
+        <div class="row total"><span class="lbl">Gain fiscal annuel (PER seul)</span><span class="val">4 100 €</span></div>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Logique</b>On <b>défiscalise le haut de revenu</b> (PER) tout en bâtissant un capital liquide et performant (PEA actions, AV). Prise de date PEA + AV à 35 ans = compteurs fiscaux (5 ans, 8 ans) lancés au plus tôt.</div></div>
+    </div>
+
+    <h3 class="section" id="c1s2" data-crumb="9.1.2 Dirigeant en cession">Cas 2 — Dirigeant cédant son entreprise à 58 ans</h3>
+    <div class="notion-card" data-search="cas pratique dirigeant cession entreprise 3 millions apport-cession 150-0 B ter donation avant cession dutreil enfants reinvestissement">
+      <p><b>Profil</b> : 58 ans, marié, 2 enfants. Entreprise valorisée <b>3 000 000 €</b> (prix de revient 100 000 €). Souhaite céder, sécuriser son patrimoine et transmettre une partie aux enfants.</p>
+      <div class="table-wrap compact">
+        <table>
+          <thead><tr><th>Tranche de titres</th><th>Montage</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>1 800 000 € (réinvestissement)</td><td><b>Apport-cession</b> à une holding (150-0 B ter)</td><td>PV en report ; réinvestir ≥ 60 % si cession &lt; 3 ans</td></tr>
+            <tr><td>800 000 € (transmission enfants)</td><td><b>Donation avant cession</b> (nue-propriété possible)</td><td>Purge de la PV + abattements 100 000 €/enfant/parent</td></tr>
+            <tr><td>400 000 € (liquidités personnelles)</td><td>Cession directe (PFU ou abattement dirigeant retraite)</td><td>Abattement fixe 500 000 € si départ retraite (150-0 D ter)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Effet combiné</b>Sans ingénierie, la PV de 2,9 M€ supporterait ≈ 870 000 € au PFU. En combinant <b>report (apport-cession)</b>, <b>purge (donation avant cession)</b> et <b>abattement dirigeant</b>, l'imposition immédiate peut être réduite de plusieurs centaines de milliers d'euros, tout en transmettant aux enfants et en réinvestissant via la holding.</div></div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Vigilance</b>Chronologie et substance : la donation doit précéder une cession <b>non encore ficelée</b>, la holding doit avoir un vrai projet de réinvestissement. Coordination notaire + avocat fiscaliste indispensable.</div></div>
+    </div>
+
+    <h3 class="section" id="c1s3" data-crumb="9.1.3 Couple retraité">Cas 3 — Couple retraité, optimisation IFI &amp; transmission</h3>
+    <div class="notion-card" data-search="cas pratique couple retraite IFI 2 millions immobilier demembrement donation nue-propriete assurance-vie 70 ans transmission enfants">
+      <p><b>Profil</b> : 68 et 66 ans, mariés (communauté), patrimoine 4 M€ dont 2,2 M€ d'immobilier (IFI), 3 enfants. Objectifs : réduire l'IFI, protéger le survivant, transmettre.</p>
+      <ul>
+        <li><b>IFI</b> : donation de la <b>nue-propriété</b> d'un immeuble locatif aux enfants → sort la valeur de l'assiette IFI du couple (l'usufruit conservé est taxé sur une base réduite ; à terme, transmission hors droits).</li>
+        <li><b>Protection</b> : <b>donation entre époux</b> + <b>préciput</b> sur la résidence principale (Partie 6).</li>
+        <li><b>Transmission</b> : <b>donation-partage</b> démembrée (abattements 100 000 €/enfant/parent rechargés) + <b>assurance-vie</b> alimentée <b>avant 70 ans</b> (152 500 €/bénéficiaire).</li>
+      </ul>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Logique</b>Un seul geste — la donation démembrée — sert <b>trois objectifs</b> : baisse de l'IFI, anticipation de la transmission à coût réduit (base décotée), et purge de la valorisation future. L'assurance-vie complète hors succession. La fenêtre des <b>70 ans</b> impose d'agir vite pour le volet 990 I.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 2 ============ -->
+    <h2 class="chapter" id="c2" data-crumb="9.2 Arbres de décision">Arbres de décision</h2>
+    <div class="figure" data-search="arbre decision choix enveloppe objectif horizon liquidite transmission defiscalisation">
+      <svg viewBox="0 0 700 330" role="img" aria-label="Arbre de décision du choix d'enveloppe">
+        <style>.q{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.6}.a{fill:var(--bg-panel);stroke:var(--border-strong);stroke-width:1.4}.qt{font:600 12px var(--font-sans);fill:var(--accent-ink)}.at{font:12px var(--font-sans);fill:var(--text)}.e{stroke:var(--border-strong);stroke-width:1.4}.el{font:10.5px var(--font-sans);fill:var(--text-mute)}</style>
+        <rect class="q" x="270" y="14" width="170" height="40" rx="9"/><text x="355" y="39" text-anchor="middle" class="qt">Objectif principal ?</text>
+        <line class="e" x1="300" y1="54" x2="120" y2="90"/><text x="180" y="74" class="el">Réduire l'IR</text>
+        <line class="e" x1="355" y1="54" x2="355" y2="90"/><text x="360" y="74" class="el">Capitaliser</text>
+        <line class="e" x1="410" y1="54" x2="600" y2="90"/><text x="500" y="74" class="el">Transmettre</text>
+        <rect class="q" x="40" y="90" width="160" height="40" rx="9"/><text x="120" y="115" text-anchor="middle" class="qt">TMI élevée ?</text>
+        <rect class="a" x="290" y="90" width="130" height="40" rx="9"/><text x="355" y="115" text-anchor="middle" class="at">Horizon ?</text>
+        <rect class="q" x="520" y="90" width="160" height="40" rx="9"/><text x="600" y="115" text-anchor="middle" class="qt">Âge &lt; 70 ans ?</text>
+        <line class="e" x1="120" y1="130" x2="120" y2="170"/>
+        <rect class="a" x="40" y="170" width="160" height="44" rx="9"/><text x="120" y="190" text-anchor="middle" class="at">PER (déduction)</text><text x="120" y="206" text-anchor="middle" class="el">+ Malraux/MH si très HR</text>
+        <line class="e" x1="320" y1="130" x2="290" y2="170"/><line class="e" x1="390" y1="130" x2="420" y2="170"/>
+        <rect class="a" x="220" y="170" width="150" height="44" rx="9"/><text x="295" y="190" text-anchor="middle" class="at">&gt; 8 ans : PEA</text><text x="295" y="206" text-anchor="middle" class="el">actions UE, exonéré</text>
+        <rect class="a" x="390" y="170" width="160" height="44" rx="9"/><text x="470" y="190" text-anchor="middle" class="at">Souple : AV / capi.</text><text x="470" y="206" text-anchor="middle" class="el">fonds € + UC</text>
+        <line class="e" x1="600" y1="130" x2="600" y2="170"/>
+        <rect class="a" x="520" y="170" width="160" height="44" rx="9"/><text x="600" y="190" text-anchor="middle" class="at">AV 990 I</text><text x="600" y="206" text-anchor="middle" class="el">152 500 €/bénéf. + donation</text>
+        <rect class="q" x="250" y="255" width="210" height="40" rx="9"/><text x="355" y="280" text-anchor="middle" class="qt">Toujours : précaution d'abord</text>
+        <line class="e" x1="120" y1="214" x2="300" y2="255"/><line class="e" x1="470" y1="214" x2="410" y2="255"/>
+      </svg>
+      <figcaption>Arbre simplifié du choix d'enveloppe selon l'objectif dominant (à croiser avec la précaution et la diversification).</figcaption>
+    </div>
+
+    <!-- ============ CHAPITRE 3 ============ -->
+    <h2 class="chapter" id="c3" data-crumb="9.3 Check-lists">Check-lists du conseiller</h2>
+    <div class="grid cols-2">
+      <div class="notion-card" data-search="checklist entree en relation conformite DER KYC adequation LCB-FT lettre mission">
+        <h4 class="notion">✅ Conformité &amp; entrée en relation</h4>
+        <ul class="checklist">
+          <li>DER remis et signé (statuts, ORIAS, tutelles)</li>
+          <li>KYC complet (situation, objectifs, horizon)</li>
+          <li>Test d'adéquation MIF + préférences ESG tracées</li>
+          <li>Vigilance LCB-FT &amp; origine des fonds</li>
+          <li>Lettre de mission / mandat signée</li>
+          <li>Déclaration d'adéquation écrite et archivée</li>
+        </ul>
+      </div>
+      <div class="notion-card" data-search="checklist bilan patrimonial civil fiscal financier social objectifs transmission liquidite">
+        <h4 class="notion">✅ Bilan patrimonial</h4>
+        <ul class="checklist">
+          <li>Volet civil : régime matrimonial, clauses, héritiers</li>
+          <li>Volet fiscal : TMI, IFI, niches utilisées</li>
+          <li>Volet financier : allocation, liquidité, risque</li>
+          <li>Volet social/retraite : droits, PER</li>
+          <li>Clauses bénéficiaires AV à jour</li>
+          <li>Calendrier des abattements (15 ans)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ CHAPITRE 4 ============ -->
+    <h2 class="chapter" id="c4" data-crumb="9.4 Glossaire">Glossaire technique</h2>
+    <div class="notion-card">
+      <dl class="glossary">
+        <dt data-search="abattement glossaire">Abattement</dt><dd data-search="abattement reduction base imposable">Réduction appliquée à la base imposable avant calcul de l'impôt (ex. 100 000 € par enfant en donation/succession).</dd>
+        <dt data-search="apport-cession glossaire">Apport-cession</dt><dd data-search="apport cession holding report 150-0 B ter">Apport de titres à une holding contrôlée avant cession, plaçant la plus-value en report d'imposition (art. 150-0 B ter CGI).</dd>
+        <dt data-search="cliquet effet glossaire fonds euros">Cliquet (effet)</dt><dd data-search="cliquet fonds euros gains acquis garantis">Mécanisme du fonds en euros par lequel les intérêts crédités sont définitivement acquis.</dd>
+        <dt data-search="DMTG glossaire droits mutation">DMTG</dt><dd data-search="droits de mutation a titre gratuit donation succession">Droits de Mutation à Titre Gratuit : impôt sur les donations et successions (barème art. 777 CGI).</dd>
+        <dt data-search="demembrement glossaire usufruit nue-propriete">Démembrement</dt><dd data-search="usufruit nue-propriete dissociation propriete">Dissociation de la pleine propriété entre usufruit (usage/revenus) et nue-propriété (capital).</dd>
+        <dt data-search="Dutreil glossaire pacte">Dutreil (pacte)</dt><dd data-search="exoneration 75 transmission entreprise 787 B">Dispositif d'exonération de 75 % de la valeur des titres d'entreprise transmis (art. 787 B CGI).</dd>
+        <dt data-search="IFI glossaire fortune immobiliere">IFI</dt><dd data-search="impot fortune immobiliere 1.3 million patrimoine net">Impôt sur la Fortune Immobilière, dû au-delà de 1,3 M€ de patrimoine immobilier net (art. 964 s. CGI).</dd>
+        <dt data-search="LMNP glossaire location meublee">LMNP</dt><dd data-search="loueur meuble non professionnel BIC amortissement">Loueur Meublé Non Professionnel : régime BIC permettant l'amortissement du bien loué meublé.</dd>
+        <dt data-search="PFU glossaire flat tax">PFU</dt><dd data-search="prelevement forfaitaire unique 30 flat tax 12.8 17.2">Prélèvement Forfaitaire Unique (« flat tax ») de 30 % sur les revenus du capital (art. 200 A CGI).</dd>
+        <dt data-search="preciput glossaire clause">Préciput</dt><dd data-search="preciput prelevement bien commun survivant avant partage 1515">Clause permettant au conjoint survivant de prélever un bien commun avant tout partage (art. 1515 C. civ.).</dd>
+        <dt data-search="quotite disponible glossaire reserve">Quotité disponible</dt><dd data-search="quotite disponible reserve hereditaire part libre">Part du patrimoine dont on peut librement disposer, au-delà de la réserve héréditaire des enfants.</dd>
+        <dt data-search="report imposition glossaire">Report / sursis d'imposition</dt><dd data-search="report sursis imposition plus-value differee">Mécanisme différant l'imposition d'une plus-value à un événement ultérieur (cession, fin de report).</dd>
+        <dt data-search="TMI glossaire taux marginal">TMI</dt><dd data-search="taux marginal imposition tranche derniere">Taux Marginal d'Imposition : taux de la dernière tranche d'IR atteinte, base de tout arbitrage.</dd>
+        <dt data-search="TOF glossaire SCPI">TOF</dt><dd data-search="taux occupation financier SCPI immobilier locatif">Taux d'Occupation Financier : indicateur de remplissage locatif d'une SCPI.</dd>
+      </dl>
+    </div>
+
+    <!-- ============ CHAPITRE 5 ============ -->
+    <h2 class="chapter" id="c5" data-crumb="9.5 Index des articles">Index des articles cités</h2>
+    <div class="notion-card">
+      <h4 class="notion">Code général des impôts (CGI)</h4>
+      <div class="index-grid" data-search="index articles CGI code general impots">
+        <p class="ix"><span class="ref">art. 125-0 A</span> Fiscalité des rachats d'assurance-vie</p>
+        <p class="ix"><span class="ref">art. 150 U</span> Plus-values immobilières des particuliers</p>
+        <p class="ix"><span class="ref">art. 150 VC</span> Abattements pour durée de détention (PV immo)</p>
+        <p class="ix"><span class="ref">art. 150-0 A</span> Plus-values mobilières</p>
+        <p class="ix"><span class="ref">art. 150-0 B ter</span> Apport-cession (report)</p>
+        <p class="ix"><span class="ref">art. 150-0 D ter</span> Abattement dirigeant partant en retraite</p>
+        <p class="ix"><span class="ref">art. 156</span> Déficit foncier</p>
+        <p class="ix"><span class="ref">art. 157-5° bis</span> Exonération du PEA</p>
+        <p class="ix"><span class="ref">art. 158-3</span> Abattement 40 % sur dividendes (barème)</p>
+        <p class="ix"><span class="ref">art. 163 quatervicies</span> Déductibilité PER</p>
+        <p class="ix"><span class="ref">art. 197</span> Barème de l'IR &amp; quotient familial</p>
+        <p class="ix"><span class="ref">art. 199 terdecies-0 A</span> Réduction IR FCPI/FIP</p>
+        <p class="ix"><span class="ref">art. 199 tervicies</span> Réduction Malraux</p>
+        <p class="ix"><span class="ref">art. 200 A</span> Prélèvement forfaitaire unique (PFU)</p>
+        <p class="ix"><span class="ref">art. 223 sexies</span> Contribution sur les hauts revenus (CEHR)</p>
+        <p class="ix"><span class="ref">art. 669</span> Barème de l'usufruit / nue-propriété</p>
+        <p class="ix"><span class="ref">art. 757 B</span> Assurance-vie après 70 ans</p>
+        <p class="ix"><span class="ref">art. 774 bis</span> Dettes de restitution (quasi-usufruit)</p>
+        <p class="ix"><span class="ref">art. 777</span> Barème des droits de mutation (DMTG)</p>
+        <p class="ix"><span class="ref">art. 779</span> Abattements selon le lien de parenté</p>
+        <p class="ix"><span class="ref">art. 787 B / 787 C</span> Pacte Dutreil</p>
+        <p class="ix"><span class="ref">art. 790</span> Réduction de droits (donation avant 70 ans)</p>
+        <p class="ix"><span class="ref">art. 790 G</span> Don familial de sommes d'argent</p>
+        <p class="ix"><span class="ref">art. 964 s.</span> Impôt sur la fortune immobilière (IFI)</p>
+        <p class="ix"><span class="ref">art. 973 / 977 / 979</span> IFI : assiette, barème, plafonnement</p>
+        <p class="ix"><span class="ref">art. 990 I</span> Assurance-vie avant 70 ans</p>
+        <p class="ix"><span class="ref">art. 1133</span> Reconstitution franche de l'usufruit</p>
+      </div>
+      <h4 class="notion">Code monétaire et financier (CMF) &amp; Code des assurances</h4>
+      <div class="index-grid" data-search="index articles CMF code monetaire financier assurances CIF COA">
+        <p class="ix"><span class="ref">art. L.221-3 CMF</span> Taux du Livret A</p>
+        <p class="ix"><span class="ref">art. L.500-1 CMF</span> Honorabilité des intermédiaires</p>
+        <p class="ix"><span class="ref">art. L.519-1 CMF</span> Statut IOBSP</p>
+        <p class="ix"><span class="ref">art. L.541-1 CMF</span> Statut CIF</p>
+        <p class="ix"><span class="ref">art. L.541-8-1 CMF</span> Obligations du CIF</p>
+        <p class="ix"><span class="ref">art. L.561-1 s. CMF</span> LCB-FT</p>
+        <p class="ix"><span class="ref">art. L.511-1 C. assur.</span> Distribution d'assurance (IAS)</p>
+        <p class="ix"><span class="ref">art. L.521-1/2 C. assur.</span> Devoir de conseil (DDA), DER</p>
+        <p class="ix"><span class="ref">art. 325-3 RG AMF</span> Document d'entrée en relation</p>
+      </div>
+      <h4 class="notion">Code civil</h4>
+      <div class="index-grid" data-search="index articles code civil regimes matrimoniaux successions">
+        <p class="ix"><span class="ref">art. 913 C. civ.</span> Réserve &amp; quotité disponible</p>
+        <p class="ix"><span class="ref">art. 1094-1 C. civ.</span> Quotité disponible entre époux</p>
+        <p class="ix"><span class="ref">art. 1397 C. civ.</span> Changement de régime matrimonial</p>
+        <p class="ix"><span class="ref">art. 1515 C. civ.</span> Clause de préciput</p>
+      </div>
+    </div>
+
+    <!-- ============ CHAPITRE 6 ============ -->
+    <h2 class="chapter" id="c6" data-crumb="9.6 Récap barèmes">Récapitulatif des barèmes clés</h2>
+    <div class="grid cols-3">
+      <div class="mini" data-search="recap bareme IR tranches 11 30 41 45"><h5>IR (par part)</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">0 % / 11 % / 30 % / 41 % / 45 %</p></div>
+      <div class="mini" data-search="recap PFU 30 flat tax"><h5>PFU</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">30 % (12,8 % IR + 17,2 % PS)</p></div>
+      <div class="mini" data-search="recap prelevements sociaux 17.2"><h5>Prélèvements sociaux</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">17,2 %</p></div>
+      <div class="mini" data-search="recap IFI seuil 1.3 million 800000"><h5>IFI</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Seuil 1,3 M€ · barème dès 800 k€ · 0,5 % à 1,5 %</p></div>
+      <div class="mini" data-search="recap abattement enfant 100000 donation succession"><h5>Abattement enfant</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">100 000 € / parent / 15 ans</p></div>
+      <div class="mini" data-search="recap assurance-vie 152500 30500 990 I 757 B"><h5>AV décès</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">152 500 €/bénéf. (&lt;70 ans) · 30 500 € (&gt;70 ans)</p></div>
+    </div>
+
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Mot de la fin</b>La gestion de patrimoine experte ne consiste pas à empiler des produits, mais à <b>orchestrer</b> civil, fiscal et financier autour des objectifs du client, dans un cadre déontologique strict (Partie 0). Anticipation, traçabilité et cohérence priment toujours sur l'optimisation isolée. Et tout chiffre cité ici doit être <b>revérifié</b> à la date de la décision : la matière évolue à chaque loi de finances.</div></div>
+
+    <nav class="part-nav">
+      <a class="prev" href="partie-8-entreprise.html"><small>Partie précédente</small><b>← 8 · Transmission d'entreprise</b></a>
+      <a class="next" href="index.html"><small>Retour</small><b>Sommaire général →</b></a>
+    </nav>
+
+    <div class="foot"><p class="disclaimer"><b>⚠️ Avertissement.</b> Cas pratiques illustratifs et simplifiés. Tous les chiffres, barèmes et articles sont à jour au 25/06/2026 (LF 2026, revenus 2025) et doivent être revérifiés (BOFiP, Légifrance) avant toute décision. Ne constitue pas un conseil personnalisé.</p></div>
+
+  </div>
+  </main>
+</div>
+
+<button id="toTop" title="Retour en haut" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/encyclo.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partie 4 — Allocation d'actifs &amp; instruments · Encyclopédie du Patrimoine</title>
+<meta name="description" content="Classes d'actifs, diversification, OPC/ETF, produits structurés, private equity (FCPR/FPCI/FCPI/FIP), SCPI et OPCI.">
+<link rel="stylesheet" href="assets/encyclo.css">
+</head>
+<body data-part="4">
+<div id="progress"></div>
+
+<header class="topbar">
+  <button class="icon-btn nav-toggle" aria-label="Sommaire"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a class="brand" href="index.html" style="color:inherit">
+    <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#b45309"/><path d="M9 22V10l7 5 7-5v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Encyclopédie du Patrimoine<small>Partie 4 · Allocation</small></span>
+  </a>
+  <div class="spacer"></div>
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="searchInput" type="search" placeholder="Rechercher dans cette partie…  ( / )" autocomplete="off" aria-label="Recherche">
+  </div>
+  <button class="icon-btn" id="themeToggle" title="Basculer clair / sombre" aria-label="Thème">
+    <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+    <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h4>Partie 4 — Sommaire</h4>
+    <nav>
+      <ul class="toc">
+        <li><a href="#c1">4.1 · Principes d'allocation</a></li>
+        <li><a class="lvl3" href="#c1s1">4.1.1 Classes d'actifs</a></li>
+        <li><a class="lvl3" href="#c1s2">4.1.2 Risque, diversification</a></li>
+        <li><a class="lvl3" href="#c1s3">4.1.3 Profil &amp; horizon</a></li>
+        <li><a href="#c2">4.2 · OPC &amp; ETF</a></li>
+        <li><a href="#c3">4.3 · Produits structurés</a></li>
+        <li><a class="lvl3" href="#c3s1">4.3.1 Mécanique autocall</a></li>
+        <li><a class="lvl3" href="#c3s2">4.3.2 Risques</a></li>
+        <li><a href="#c4">4.4 · Private equity</a></li>
+        <li><a class="lvl3" href="#c4s1">4.4.1 Véhicules</a></li>
+        <li><a class="lvl3" href="#c4s2">4.4.2 J-curve &amp; fiscalité</a></li>
+        <li><a href="#c5">4.5 · SCPI &amp; OPCI</a></li>
+      </ul>
+      <h4>Naviguer</h4>
+      <ul class="toc">
+        <li><a href="partie-3-enveloppes.html">← Partie 3 · Enveloppes</a></li>
+        <li><a href="index.html">Sommaire général</a></li>
+        <li><a href="partie-5-immobilier.html">Partie 5 · Immobilier →</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="scrim"></div>
+
+  <main class="content" style="--partno:'4'">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a><span class="sep">/</span>
+      <a href="partie-4-allocation.html">Partie 4</a><span class="sep">/</span>
+      <span id="crumb-current">Allocation d'actifs</span>
+    </nav>
+
+    <section class="part-hero" data-crumb="Partie 4">
+      <svg class="hero-art" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="70" stroke="#fff" stroke-width="3"/><path d="M100 30v70l50 28" stroke="#fff" stroke-width="3"/></svg>
+      <div class="eyebrow">Partie 4</div>
+      <h1>Allocation d'actifs &amp; instruments</h1>
+      <p>Comment répartir le capital entre classes d'actifs, et avec quels instruments. Des principes (diversification, profil de risque) aux véhicules avancés : OPC/ETF, produits structurés, private equity et pierre-papier.</p>
+    </section>
+
+    <p class="lead">L'allocation d'actifs explique l'essentiel de la performance d'un portefeuille sur le long terme — bien plus que la sélection de tel ou tel titre. Définir la <b>bonne répartition</b> selon le profil de risque, l'horizon et les objectifs est l'acte central de la gestion financière.</p>
+
+    <!-- ============ CHAPITRE 1 ============ -->
+    <h2 class="chapter" id="c1" data-crumb="4.1 Principes">Principes d'allocation</h2>
+
+    <h3 class="section" id="c1s1" data-crumb="4.1.1 Classes d'actifs">Classes d'actifs &amp; couple rendement/risque</h3>
+    <div class="table-wrap" data-search="classes actifs monetaire obligations actions immobilier non cote rendement volatilite horizon">
+      <table>
+        <caption>Tableau 4.1 — Grandes classes d'actifs (ordres de grandeur长 terme, indicatifs)</caption>
+        <thead><tr><th>Classe</th><th>Rendement attendu</th><th>Volatilité</th><th>Horizon</th><th>Rôle</th></tr></thead>
+        <tbody>
+          <tr><td>Monétaire</td><td>Faible</td><td><span class="pill ok">Très faible</span></td><td>&lt; 1 an</td><td>Liquidité / attente</td></tr>
+          <tr><td>Obligations</td><td>Modéré</td><td><span class="pill ok">Faible-modérée</span></td><td>2-5 ans</td><td>Stabilité, revenu</td></tr>
+          <tr><td>Actions</td><td>Élevé</td><td><span class="pill danger">Élevée</span></td><td>&gt; 8 ans</td><td>Moteur de performance</td></tr>
+          <tr><td>Immobilier (SCPI)</td><td>Modéré-élevé</td><td><span class="pill warn">Modérée</span></td><td>&gt; 8 ans</td><td>Revenu, décorrélation partielle</td></tr>
+          <tr><td>Private equity</td><td>Élevé (prime d'illiquidité)</td><td><span class="pill danger">Élevée</span></td><td>8-10 ans</td><td>Diversification, performance</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Il n'existe pas de rendement sans risque. Toute promesse de « rendement élevé sans risque » est un signal d'alerte (voire de fraude). Le rendement est la <b>rémunération d'un risque</b> (volatilité, illiquidité, crédit).</div></div>
+
+    <h3 class="section" id="c1s2" data-crumb="4.1.2 Risque, diversification">Diversification &amp; frontière efficiente</h3>
+    <div class="notion-card" data-search="diversification correlation frontiere efficiente markowitz reduction risque non systematique sharpe">
+      <p class="def"><b>Diversification.</b> Combiner des actifs <b>peu corrélés</b> réduit le risque global du portefeuille sans sacrifier proportionnellement le rendement — « le seul repas gratuit en finance » (Markowitz).</p>
+      <div class="figure">
+        <svg viewBox="0 0 420 240" role="img" aria-label="Frontière efficiente">
+          <style>.ax{stroke:var(--border-strong);stroke-width:1.5}.al{font:11px var(--font-sans);fill:var(--text-mute)}.cv{fill:none;stroke:var(--accent);stroke-width:2.5}.pt{fill:var(--accent)}</style>
+          <line class="ax" x1="50" y1="200" x2="400" y2="200"/><line class="ax" x1="50" y1="200" x2="50" y2="20"/>
+          <text class="al" x="360" y="216">Risque →</text><text class="al" x="8" y="30" transform="rotate(-90 14 110)">Rendement →</text>
+          <path class="cv" d="M70 190 Q120 90 250 60 T390 45"/>
+          <circle class="pt" cx="120" cy="118" r="4"/><text class="al" x="128" y="116">Prudent</text>
+          <circle class="pt" cx="200" cy="78" r="4"/><text class="al" x="208" y="76">Équilibré</text>
+          <circle class="pt" cx="320" cy="52" r="4"/><text class="al" x="270" y="44">Dynamique</text>
+        </svg>
+        <figcaption>Frontière efficiente : pour chaque niveau de risque, l'allocation maximisant le rendement attendu.</figcaption>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>La diversification « en apparence » : détenir 10 fonds actions monde tous corrélés à 0,95 n'est pas se diversifier. La vraie diversification combine des classes d'actifs aux <b>moteurs de performance différents</b> (actions, taux, immobilier, or, non coté).</div></div>
+    </div>
+
+    <h3 class="section" id="c1s3" data-crumb="4.1.3 Profil &amp; horizon">Profil de risque &amp; horizon</h3>
+    <p data-search="profil risque prudent equilibre dynamique horizon capacite tolerance perte adequation MIF SRI">Le profil de risque combine la <b>capacité</b> objective à subir une perte (situation financière, horizon) et la <b>tolérance</b> subjective (psychologie). Le test d'adéquation MIF II (Partie 0) le formalise. L'horizon est déterminant : sur l'immobilier ou les actions, un horizon court transforme la volatilité en risque réel de perte au moment du retrait.</p>
+
+    <!-- ============ CHAPITRE 2 ============ -->
+    <h2 class="chapter" id="c2" data-crumb="4.2 OPC &amp; ETF">OPC &amp; ETF</h2>
+    <div class="notion-card" data-search="OPCVM FIA SICAV FCP gestion active passive ETF tracker frais TER indice replication">
+      <p class="def"><b>OPC (Organisme de Placement Collectif).</b> Véhicule mutualisé (SICAV ou FCP) investissant l'épargne collectée selon une politique définie. <b>ETF (tracker)</b> : OPC coté en continu répliquant un indice, à frais réduits.</p>
+      <div class="table-wrap compact" data-search="comparaison gestion active passive ETF frais TER surperformance">
+        <table>
+          <caption>Tableau 4.2 — Gestion active vs passive</caption>
+          <thead><tr><th>Critère</th><th>Gestion active (OPC)</th><th>Gestion passive (ETF)</th></tr></thead>
+          <tbody>
+            <tr><td>Objectif</td><td>Battre l'indice</td><td>Répliquer l'indice</td></tr>
+            <tr><td>Frais (TER)</td><td>Élevés (1-2,5 %/an)</td><td><span class="pill ok">Faibles (0,05-0,40 %)</span></td></tr>
+            <tr><td>Surperformance nette</td><td>Minoritaire sur longue durée</td><td>Performance de marché</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>Les <b>frais</b> sont le facteur le plus prévisible de la performance nette. 1,5 % de frais annuels, sur 20 ans, peuvent amputer le capital final de plus de 25 %. Un ETF logé en PEA cumule frais bas + fiscalité optimale.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 3 ============ -->
+    <h2 class="chapter" id="c3" data-crumb="4.3 Produits structurés">Produits structurés</h2>
+
+    <h3 class="section" id="c3s1" data-crumb="4.3.1 Mécanique autocall">Mécanique de l'autocall / Phoenix</h3>
+    <div class="notion-card" data-search="produit structure autocall phoenix sous-jacent indice barriere coupon rappel anticipe protection capital">
+      <p class="def"><b>Produit structuré.</b> Instrument dont le rendement est défini par une <b>formule contractuelle</b> liée à un sous-jacent (indice, panier). Les formules <b>autocall / Phoenix</b> versent un coupon conditionnel et peuvent être rappelées par anticipation.</p>
+      <div class="figure">
+        <svg viewBox="0 0 560 200" role="img" aria-label="Mécanique d'un autocall">
+          <style>.ln{stroke:var(--border-strong);stroke-width:1.2;stroke-dasharray:4 3}.bar{stroke:var(--danger);stroke-width:1.5;stroke-dasharray:5 4}.idx{fill:none;stroke:var(--accent);stroke-width:2.5}.tl{font:11px var(--font-sans);fill:var(--text-mute)}.ok{fill:var(--ok)}</style>
+          <line x1="40" y1="60" x2="540" y2="60" class="ln"/><text x="44" y="54" class="tl">Niveau initial (seuil de rappel + coupon)</text>
+          <line x1="40" y1="150" x2="540" y2="150" class="bar"/><text x="44" y="166" class="tl">Barrière de protection du capital (ex. −40 %)</text>
+          <path class="idx" d="M40 60 C120 110 160 30 220 50"/>
+          <circle class="ok" cx="220" cy="50" r="6"/><text x="200" y="40" class="tl">An 1 : ≥ seuil → rappel + coupon</text>
+        </svg>
+        <figcaption>À chaque date de constatation, si le sous-jacent est ≥ au seuil, le produit est remboursé avec coupon. Sinon il continue, coupons mémorisés (Phoenix).</figcaption>
+      </div>
+    </div>
+
+    <h3 class="section" id="c3s2" data-crumb="4.3.2 Risques">Risques &amp; points de vigilance</h3>
+    <div class="grid cols-3">
+      <div class="mini" data-search="risque capital barriere perte sous-jacent baisse"><h5>Risque de capital</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Si la barrière est franchie à l'échéance, le capital subit la <b>baisse réelle</b> du sous-jacent. La « protection » est conditionnelle, pas garantie.</p></div>
+      <div class="mini" data-search="risque credit emetteur defaut banque obligation"><h5>Risque émetteur</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Le produit est une <b>créance sur l'émetteur</b> (souvent une banque). Sa faillite peut entraîner la perte totale, indépendamment du sous-jacent.</p></div>
+      <div class="mini" data-search="risque liquidite frais complexite marche secondaire"><h5>Liquidité &amp; frais</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Revente avant terme à un prix de marché incertain ; <b>frais de structuration</b> souvent opaques, intégrés dans la formule.</p></div>
+    </div>
+    <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>Un coupon élevé (8-10 %) <b>signale un risque élevé</b>, pas une aubaine : le marché price le risque que la barrière soit franchie. Lire le <b>DIC PRIIPS</b> (indicateur SRI, scénarios défavorables) et vérifier la <b>qualité de crédit de l'émetteur</b> avant tout. Produit à réserver à une part minoritaire et à un client averti.</div></div>
+
+    <!-- ============ CHAPITRE 4 ============ -->
+    <h2 class="chapter" id="c4" data-crumb="4.4 Private equity">Private equity (non coté)</h2>
+
+    <h3 class="section" id="c4s1" data-crumb="4.4.1 Véhicules">Les véhicules : FCPR, FPCI, FCPI, FIP</h3>
+    <div class="table-wrap" data-search="private equity FCPR FPCI FCPI FIP capital investissement avantage fiscal reduction IR quota innovation proximite">
+      <table>
+        <caption>Tableau 4.3 — Véhicules de capital-investissement</caption>
+        <thead><tr><th>Véhicule</th><th>Cible</th><th>Avantage fiscal</th><th>Public</th></tr></thead>
+        <tbody>
+          <tr><td><b>FCPR</b></td><td>Sociétés non cotées (≥ 50 %)</td><td>Exonération IR des PV si conservation 5 ans <span class="ref">art. 150-0 A III CGI</span> (PS dus)</td><td>Large</td></tr>
+          <tr><td><b>FPCI</b></td><td>Non coté, professionnel</td><td>Idem FCPR, exonération PV</td><td>Averti / institutionnel</td></tr>
+          <tr><td><b>FCPI</b></td><td>PME innovantes</td><td>Réduction d'IR à la souscription <span class="ref">art. 199 terdecies-0 A CGI</span></td><td>Particuliers</td></tr>
+          <tr><td><b>FIP</b></td><td>PME régionales / Corse / Outre-mer</td><td>Réduction d'IR à la souscription (taux majorés Corse/OM)</td><td>Particuliers</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Référence</b>Réduction d'IR FCPI/FIP : taux de base 18 %, parfois relevé à 25 % selon les lois de finances, dans la limite de versements plafonnés (12 000 € célibataire / 24 000 € couple), avec engagement de conservation de 5 ans. <b>Vérifier le taux de l'année</b> <span class="ref">art. 199 terdecies-0 A CGI</span>.</div></div>
+
+    <h3 class="section" id="c4s2" data-crumb="4.4.2 J-curve &amp; fiscalité">Courbe en J, illiquidité &amp; appels de fonds</h3>
+    <div class="notion-card" data-search="J-curve courbe en J appels de fonds capital appele distributions illiquidite blocage 8 10 ans TRI carried interest">
+      <p class="def"><b>Courbe en J.</b> Profil de performance typique du PE : la valeur baisse d'abord (frais, investissements immatures) avant de remonter fortement quand les participations sont cédées. Le capital est <b>bloqué 8 à 10 ans</b>.</p>
+      <div class="figure">
+        <svg viewBox="0 0 420 200" role="img" aria-label="Courbe en J du private equity">
+          <style>.ax2{stroke:var(--border-strong);stroke-width:1.5}.jc{fill:none;stroke:var(--accent);stroke-width:2.5}.al2{font:11px var(--font-sans);fill:var(--text-mute)}</style>
+          <line class="ax2" x1="40" y1="110" x2="400" y2="110"/><line class="ax2" x1="40" y1="20" x2="40" y2="190"/>
+          <path class="jc" d="M40 90 C90 150 130 165 180 150 S300 70 390 30"/>
+          <text class="al2" x="90" y="180">Années 1-4 : J négatif</text><text class="al2" x="280" y="50">Sortie : distributions</text>
+        </svg>
+        <figcaption>La performance se matérialise en fin de vie du fonds. Exiger un horizon réel de 8-10 ans.</figcaption>
+      </div>
+      <div class="callout exemple"><span class="ico">🧮</span><div class="body"><b class="tag">Exemple chiffré</b>Souscription FCPR de 50 000 €, plus-value finale de 40 000 € après 8 ans. PV exonérée d'IR (conservation &gt; 5 ans) : seul subsiste les <b>PS 17,2 %</b> = 6 880 €. Net = 33 120 € de gain, contre 28 000 € sur un CTO au PFU — un gain fiscal de <b>4 880 €</b>, contrepartie d'une illiquidité longue.</div></div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>L'<b>illiquidité</b> est le vrai risque : impossible de récupérer les fonds avant le terme. Ne jamais y loger une épargne potentiellement nécessaire. Vérifier aussi les <b>frais</b> (souvent 3-4 %/an cumulés) qui peuvent absorber la prime d'illiquidité sur les véhicules grand public.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 5 ============ -->
+    <h2 class="chapter" id="c5" data-crumb="4.5 SCPI &amp; OPCI">SCPI &amp; OPCI (pierre-papier)</h2>
+    <div class="notion-card" data-search="SCPI societe civile placement immobilier rendement TOF taux occupation distribution OPCI demembrement parts europeennes">
+      <p class="def"><b>SCPI.</b> Société Civile de Placement Immobilier : détention <b>mutualisée et déléguée</b> d'un parc immobilier locatif. L'épargnant perçoit des revenus fonciers au prorata de ses parts, sans gestion. L'<b>OPCI</b> ajoute une poche financière et une liquidité supérieure.</p>
+      <ul>
+        <li><b>Indicateurs clés</b> : taux de distribution (rendement annuel), TOF (taux d'occupation financier), report à nouveau, valeur de reconstitution.</li>
+        <li><b>Fiscalité</b> : revenus fonciers (barème + PS) en direct. Loger les SCPI en <b>assurance-vie</b> ou démembrer les parts atténue la fiscalité (voir Partie 5).</li>
+        <li><b>SCPI européennes</b> : revenus taxés selon les conventions (souvent crédit d'impôt ou taux effectif), réduisant le frottement par rapport aux SCPI 100 % françaises.</li>
+      </ul>
+      <div class="table-wrap compact" data-search="comparaison SCPI OPCI liquidite fiscalite composition rendement">
+        <table>
+          <caption>Tableau 4.4 — SCPI vs OPCI</caption>
+          <thead><tr><th>Critère</th><th>SCPI</th><th>OPCI</th></tr></thead>
+          <tbody>
+            <tr><td>Composition</td><td>≈ 100 % immobilier</td><td>≥ 60 % immo + poche financière + liquidités</td></tr>
+            <tr><td>Liquidité</td><td>Faible (marché des parts)</td><td>Supérieure</td></tr>
+            <tr><td>Fiscalité directe</td><td>Revenus fonciers</td><td>RCM (souvent) ou fonciers selon structure</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>La SCPI offre un revenu immobilier <b>mutualisé et passif</b>, mais son rendement affiché est <b>brut de fiscalité</b> : pour un contribuable à TMI 30 % + PS, le rendement net peut être amputé de près de moitié en détention directe. D'où l'intérêt du <b>démembrement</b> ou du logement en <b>assurance-vie</b>.</div></div>
+    </div>
+
+    <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">Synthèse de la partie</b>L'allocation prime sur la sélection. On construit un <b>cœur de portefeuille</b> diversifié et peu coûteux (ETF, fonds €, SCPI) puis on ajoute, en part minoritaire et maîtrisée, des <b>satellites</b> de diversification (structurés, private equity). Chaque instrument se loge dans l'enveloppe (Partie 3) qui en optimise la fiscalité.</div></div>
+
+    <nav class="part-nav">
+      <a class="prev" href="partie-3-enveloppes.html"><small>Partie précédente</small><b>← 3 · Enveloppes</b></a>
+      <a class="next" href="partie-5-immobilier.html"><small>Partie suivante</small><b>5 · Immobilier &amp; immobilier fiscal →</b></a>
+    </nav>
+
+    <div class="foot"><p class="disclaimer"><b>⚠️ Avertissement.</b> Les performances passées ne préjugent pas des performances futures. Tout investissement comporte un risque de perte en capital. Taux de réduction d'IR (FCPI/FIP) à vérifier dans la loi de finances de l'année. Contenu pédagogique, non constitutif d'un conseil en investissement personnalisé.</p></div>
+
+  </div>
+  </main>
+</div>
+
+<button id="toTop" title="Retour en haut" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/encyclo.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# tooling local
+.claude/
+# python
+__pycache__/
+*.pyc
+# intermédiaire de build (régénérable)
+Encyclopedie-Patrimoine-PRINT.html
