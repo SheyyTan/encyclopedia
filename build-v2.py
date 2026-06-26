@@ -163,6 +163,9 @@ TOPBAR='''<div id="progress"></div>
   <div class="spacer"></div>
   <div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="searchInput" type="search" placeholder="Rechercher…  ( / )" autocomplete="off" aria-label="Recherche"></div>
+  <a class="icon-btn" href="Encyclopedie-Patrimoine.pdf" download title="Télécharger l'encyclopédie en PDF" aria-label="Télécharger en PDF">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M8 11l4 4 4-4M5 21h14"/></svg>
+  </a>
   <button class="icon-btn" id="themeToggle" title="Clair / sombre" aria-label="Thème">
     <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
     <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>

@@ -97,6 +97,7 @@
           <tr><td><b>SA</b></td><td>2 (7 si coté)</td><td>Limitée aux apports</td><td>Président / DG (assimilé salarié)</td><td>IS</td></tr>
           <tr><td><b>SNC</b></td><td>2 +</td><td><b>Indéfinie &amp; solidaire</b></td><td>Gérant (TNS)</td><td>IR</td></tr>
           <tr><td><b>SCI</b></td><td>2 +</td><td>Indéfinie (au prorata)</td><td>Gérant</td><td>IR (option IS) — voir Partie 6</td></tr>
+          <tr><td><b>SELARL / SELAS</b> (SEL)</td><td>Professions libérales réglementées</td><td>Limitée aux apports</td><td>Gérant / Président</td><td>IS</td></tr>
         </tbody>
       </table>
     </div>
@@ -129,6 +130,7 @@
       <div class="mini" data-search="SA societe anonyme capital 37000 conseil administration grandes entreprises cotation"><h5>SA</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Société Anonyme : grandes entreprises, capital minimum 37 000 €, gouvernance lourde (conseil d'administration). Adaptée à la cotation.</p></div>
       <div class="mini" data-search="SNC societe en nom collectif responsabilite indefinie solidaire transparence IR confiance"><h5>SNC</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Société en Nom Collectif : associés <b>indéfiniment et solidairement responsables</b>. Forte confiance requise ; usages fiscaux spécifiques (transparence IR).</p></div>
       <div class="mini" data-search="SCI societe civile immobiliere detention gestion immobilier transmission demembrement"><h5>SCI</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Société Civile Immobilière : détenir et transmettre de l'immobilier à plusieurs. Détaillée en <b>Partie 6</b> (IR vs IS, démembrement).</p></div>
+      <div class="mini" data-search="SEL SELARL SELAS SELAFA societe exercice liberal professions reglementees medecin avocat expert-comptable infirmier"><h5>SEL (SELARL / SELAS)</h5><p style="margin:0;font-size:13px;color:var(--text-soft)">Société d'Exercice Libéral : l'équivalent de la SARL (<b>SELARL</b>) ou de la SAS (<b>SELAS</b>) pour les <b>professions libérales réglementées</b> (médecins, avocats, experts-comptables, infirmiers…). Même logique de statut social : gérant majoritaire de SELARL = <b>TNS</b>, président de SELAS = <b>assimilé salarié</b>.</p></div>
     </div>
 
     <!-- ============ CHAPITRE 3 ============ -->
@@ -194,8 +196,87 @@
       <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège</b>Tout sortir en dividendes pour « payer moins de charges » prive de <b>protection sociale</b> et de <b>droits à la retraite</b>, et peut être requalifié si la rémunération est anormalement basse. L'optimisation pure à court terme se paie au moment de la retraite ou d'un arrêt maladie.</div></div>
     </div>
 
-    <!-- ============ CHAPITRE 6 ============ -->
-    <h2 class="chapter" id="c6" data-crumb="9.6 Choisir sa structure">Choisir sa structure</h2>
+    <!-- ============ CHAPITRE 6 — HOLDING ============ -->
+    <h2 class="chapter" id="c6" data-crumb="9.6 La holding">La holding</h2>
+
+    <h3 class="section" id="c6s1" data-crumb="9.6.1 Définition &amp; rôle">Définition &amp; rôle</h3>
+    <div class="notion-card" data-search="holding societe mere participations filiales animatrice passive controle remontee dividendes effet de levier transmission groupe">
+      <p class="def"><b>Holding.</b> Société qui détient des <b>participations</b> dans une ou plusieurs autres sociétés (les <b>filiales</b>). Elle ne « produit » rien par elle-même : elle <b>détient, contrôle et organise</b>. On distingue la holding <b>passive</b> (simple détention de titres) et la holding <b>animatrice</b> (qui anime réellement ses filiales : stratégie, direction, services).</p>
+      <div class="figure" data-search="schema holding societe mere filiales dividendes remontee detention">
+        <svg viewBox="0 0 480 210" role="img" aria-label="Schéma d'une holding et de ses filiales">
+          <style>.hb{fill:var(--accent);stroke:none}.fb{fill:var(--bg-panel);stroke:var(--accent);stroke-width:1.6}.ht{font:600 13px var(--font-sans);fill:#fff}.hs{font:10px var(--font-sans);fill:#fff;opacity:.9}.ft{font:600 12px var(--font-sans);fill:var(--text)}.lbl{font:10.5px var(--font-sans);fill:var(--text-mute)}.fl{stroke:var(--accent);stroke-width:1.8;fill:none}</style>
+          <rect class="hb" x="170" y="16" width="140" height="48" rx="10"/><text x="240" y="38" text-anchor="middle" class="ht">Holding</text><text x="240" y="54" text-anchor="middle" class="hs">société mère</text>
+          <rect class="fb" x="40" y="146" width="150" height="48" rx="10"/><text x="115" y="174" text-anchor="middle" class="ft">Filiale A</text>
+          <rect class="fb" x="290" y="146" width="150" height="48" rx="10"/><text x="365" y="174" text-anchor="middle" class="ft">Filiale B</text>
+          <path class="fl" d="M115 146 L210 64" marker-end="url(#ah)"/>
+          <path class="fl" d="M365 146 L270 64" marker-end="url(#ah)"/>
+          <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0l7 3-7 3z" fill="var(--accent)"/></marker></defs>
+          <text x="240" y="112" text-anchor="middle" class="lbl">↑ dividendes (régime mère-fille)</text>
+        </svg>
+        <figcaption>La holding chapeaute ses filiales et fait remonter leurs dividendes.</figcaption>
+      </div>
+      <p>À quoi ça sert concrètement :</p>
+      <ul>
+        <li><b>Contrôler un groupe</b> depuis une seule structure de tête.</li>
+        <li><b>Faire remonter les dividendes</b> des filiales pour les <b>réinvestir</b> (nouvelle activité, immobilier, placements) avec un frottement fiscal minime (régime mère-fille).</li>
+        <li><b>Racheter une société</b> par effet de levier (OBO / LBO — voir Partie 11), la dette étant remboursée par les dividendes de la cible.</li>
+        <li><b>Transmettre</b> plus facilement (donation des titres de la holding ; pacte Dutreil si la holding est <b>animatrice</b>).</li>
+      </ul>
+      <div class="callout norme"><span class="ico">⚖️</span><div class="body"><b class="tag">Point clé — animatrice vs passive</b>Beaucoup d'avantages (pacte Dutreil <span class="ref">art. 787 B CGI</span>, apport-cession <span class="ref">art. 150-0 B ter CGI</span>, abattements de cession) exigent une holding <b>animatrice</b>. Une holding <b>passive</b> y est exclue. Cette qualification est strictement contrôlée — voir <b>Partie 11</b>.</div></div>
+    </div>
+
+    <h3 class="section" id="c6s2" data-crumb="9.6.2 Régime mère-fille">Le régime mère-fille</h3>
+    <div class="notion-card" data-search="regime mere fille 145 216 CGI exoneration 95 quote-part frais charges 5 dividendes detention 5 pourcent 2 ans reinvestir">
+      <p class="def"><b>Régime mère-fille</b> <span class="ref">art. 145 &amp; 216 CGI</span>. Les dividendes versés par la filiale à la holding sont <b>exonérés d'IS à 95 %</b> : seule une <b>quote-part de frais et charges de 5 %</b> reste imposable. Conditions : la mère détient au moins <b>5 % du capital</b> de la fille et conserve les titres au moins <b>2 ans</b>.</p>
+      <div class="calc" data-search="calcul mere fille 100000 dividendes quote-part 5 IS 1250 reinvestissable">
+        <div class="row"><span class="lbl">Dividendes remontés de la filiale</span><span class="val">100 000 €</span></div>
+        <div class="row"><span class="lbl">Quote-part de frais &amp; charges (5 %)</span><span class="val">5 000 €</span></div>
+        <div class="row"><span class="lbl">IS sur la quote-part (25 %)</span><span class="val">1 250 €</span></div>
+        <div class="row total"><span class="lbl">Disponible dans la holding pour réinvestir</span><span class="val">98 750 €</span></div>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>La holding permet de réinvestir <b>≈ 98,75 %</b> du dividende — frottement effectif ≈ <b>1,25 %</b>. Une distribution <b>directe au dirigeant</b>, elle, subirait le <b>PFU 30 %</b> (il ne resterait que 70 %). Le régime mère-fille est donc l'outil reine du <b>réinvestissement</b>.</div></div>
+    </div>
+
+    <h3 class="section" id="c6s3" data-crumb="9.6.3 Intégration fiscale">L'intégration fiscale</h3>
+    <div class="notion-card" data-search="integration fiscale 223 A CGI detention 95 consolidation resultats compensation benefices deficits neutralisation intra-groupe">
+      <p class="def"><b>Intégration fiscale</b> <span class="ref">art. 223 A CGI</span>. Lorsque la mère détient au moins <b>95 %</b> de ses filiales, le groupe peut <b>consolider ses résultats</b> : les bénéfices des unes <b>compensent les déficits</b> des autres, et les opérations internes sont neutralisées. Un seul IS est dû, au niveau du groupe.</p>
+      <div class="calc" data-search="calcul integration fiscale filiale benefice deficit compensation economie IS">
+        <div class="row"><span class="lbl">Filiale A — bénéfice</span><span class="val">+200 000 €</span></div>
+        <div class="row"><span class="lbl">Filiale B — déficit (activité en lancement)</span><span class="val">−150 000 €</span></div>
+        <div class="row"><span class="lbl">Sans intégration : IS de A (25 % × 200 000)</span><span class="val">50 000 €</span></div>
+        <div class="row"><span class="lbl">Avec intégration : IS du groupe (25 % × 50 000)</span><span class="val">12 500 €</span></div>
+        <div class="row total"><span class="lbl">Économie de trésorerie immédiate</span><span class="val">≈ 37 500 €</span></div>
+      </div>
+      <div class="callout retenir"><span class="ico">💡</span><div class="body"><b class="tag">À retenir</b>L'intégration fiscale est précieuse quand le groupe combine des filiales <b>bénéficiaires et déficitaires</b> (ex. une activité mature qui finance une activité en lancement) : elle évite d'avancer l'IS sur les bénéfices pendant que d'autres pertes « dorment ».</div></div>
+    </div>
+
+    <h3 class="section" id="c6s4" data-crumb="9.6.4 Holding : intérêt ou non ?">Holding : intérêt… ou non ?</h3>
+    <p data-search="holding interet pertinence reinvestir consommer cout complexite quand utile">La holding est un outil puissant <b>mais pas toujours pertinent</b> : tout dépend de ce que l'on veut faire des bénéfices.</p>
+    <div class="table-wrap" data-search="tableau holding pertinente reinvestir structurer racheter transmettre consommer petite activite">
+      <table>
+        <caption>Tableau 9.4 — La holding est-elle pertinente ?</caption>
+        <thead><tr><th>Votre objectif</th><th>Holding pertinente ?</th></tr></thead>
+        <tbody>
+          <tr><td>Réinvestir les bénéfices (croissance, immobilier, nouvelle activité)</td><td><span class="pill ok">Oui</span> — régime mère-fille</td></tr>
+          <tr><td>Détenir / structurer plusieurs sociétés</td><td><span class="pill ok">Oui</span></td></tr>
+          <tr><td>Racheter une société par effet de levier</td><td><span class="pill ok">Oui</span> — OBO / LBO (Partie 11)</td></tr>
+          <tr><td>Préparer la transmission</td><td><span class="pill ok">Oui</span> (si animatrice)</td></tr>
+          <tr><td>Consommer tous les revenus (train de vie)</td><td><span class="pill danger">Non</span> — frottement à la sortie</td></tr>
+          <tr><td>Une seule petite activité, sans projet</td><td><span class="pill danger">Non</span> — coûts &amp; complexité injustifiés</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notion-card" data-search="cas pratique holding reinvestir vs consommer 100000 mere fille PFU 30 70000 differe impot sortie">
+      <h4 class="notion">Cas pratique : réinvestir vs consommer (100 000 € de bénéfice)</h4>
+      <div class="calc">
+        <div class="row"><span class="lbl">Avec holding, pour <b>réinvestir</b> (mère-fille)</span><span class="val">≈ 98 750 € replacés</span></div>
+        <div class="row"><span class="lbl">Sans holding, dividende pour <b>consommer</b> (PFU 30 %)</span><span class="val">70 000 € en poche</span></div>
+      </div>
+      <div class="callout piege"><span class="ico">⚠️</span><div class="body"><b class="tag">Piège — la holding diffère l'impôt, elle ne l'efface pas</b>Le quasi-98,75 % n'est <b>pas</b> dans votre poche : il est dans la holding, pour <b>réinvestir</b>. Le jour où vous voudrez sortir cet argent pour vous, vous <b>repaierez le PFU</b>. La holding brille pour <b>capitaliser / réinvestir</b> ; elle n'apporte rien (voire coûte : compta, juridique) si l'objectif est simplement de <b>consommer</b> les revenus. À calibrer selon le projet.</div></div>
+    </div>
+
+    <!-- ============ CHAPITRE 7 ============ -->
+    <h2 class="chapter" id="c7" data-crumb="9.7 Choisir sa structure">Choisir sa structure</h2>
     <div class="table-wrap" data-search="synthese choix structure micro EURL SASU SARL SAS objectif demarrage protection sociale levee de fonds famille">
       <table>
         <caption>Tableau 9.4 — Quelle structure pour quel projet ?</caption>
