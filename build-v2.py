@@ -143,14 +143,12 @@ HUB='''<section class="part-page" id="hub" data-part="2">
     <p class="sub">Du fondamental à l'expertise : fiscalité, enveloppes, immobilier, sociétés, comptabilité, transmission et entreprise. Définitions, calculs, cas chiffrés et articles du CGI. Édition « en devenir d'être indépendant ».</p>
     <div class="meta"><span class="chip">⚖️ Articles CGI</span><span class="chip">🧮 Cas chiffrés</span><span class="chip">📊 Tableaux</span><span class="chip">🏢 Sociétés &amp; compta</span><span class="chip">📴 Hors-ligne</span></div>
   </section>
-  <div class="section-title">Code couleur des parties</div>
-  <div class="legend" data-search="legende couleurs">%s</div>
   <div class="section-title">Sommaire général</div>
   <div class="parts">%s</div>
   <div id="noResults" class="no-results">Aucune partie ne correspond à votre recherche.</div>
   <div class="foot"><p class="disclaimer"><b>⚠️ Avertissement.</b> Ressource pédagogique à jour au 26/06/2026 (LF 2026). Ne constitue pas un conseil personnalisé. Vérifiez les textes en vigueur (BOFiP, Légifrance) avant toute décision.</p></div>
 </div></main>
-</section>'''%(legend,"".join(cards))
+</section>'''%("".join(cards))
 
 # ---------- chrome + script ----------
 TOPBAR='''<div id="progress"></div>
