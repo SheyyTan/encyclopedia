@@ -158,7 +158,7 @@ HUB='''<section class="part-page" id="hub" data-part="2">
     <div class="kicker">Référence professionnelle · LF 2026 / revenus 2025</div>
     <h1>L'encyclopédie illustrée de la gestion de patrimoine</h1>
     <p class="sub">Du fondamental à l'expertise : fiscalité, enveloppes, immobilier, sociétés, comptabilité, transmission et entreprise. Définitions, calculs, cas chiffrés et articles du CGI. Édition « en devenir d'être indépendant ».</p>
-    <div class="meta"><span class="chip">⚖️ Articles CGI</span><span class="chip">🧮 Cas chiffrés</span><span class="chip">📊 Tableaux</span><span class="chip">🏢 Sociétés &amp; compta</span><span class="chip">📴 Hors-ligne</span></div>
+    <div class="meta"><span class="chip">⚖️ Articles CGI</span><span class="chip">🧮 Cas chiffrés</span><span class="chip">📊 Tableaux</span><span class="chip">🏢 Sociétés &amp; compta</span></div>
   </section>
   <div class="section-title">Sommaire général</div>
   <div class="parts">%s</div>
