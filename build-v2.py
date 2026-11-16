@@ -80,6 +80,12 @@ css += """
 #searchResults .rs{ display:block; font-size:12px; color:var(--text-mute); margin-top:2px; line-height:1.45; }
 #searchResults mark{ background:#ffe58a; color:#3a2c00; border-radius:2px; padding:0 1px; }
 [data-theme="dark"] #searchResults mark{ background:#7a5d00; color:#ffe; }
+/* bascule mode débutant */
+.mode-pill{ display:inline-flex; align-items:center; gap:6px; margin-left:6px; padding:7px 13px; border-radius:999px;
+  font-size:13px; font-weight:800; text-decoration:none; color:#fff; white-space:nowrap;
+  background:linear-gradient(90deg,#8b5cf6,#06b6d4); box-shadow:0 2px 8px rgba(99,102,241,.35); }
+.mode-pill:hover{ filter:brightness(1.07); transform:translateY(-1px); }
+@media(max-width:760px){ .mode-pill .lbl{ display:none; } .mode-pill{ padding:7px 10px; font-size:15px; margin-left:2px; } }
 """
 
 def fix_internal(s):
@@ -175,6 +181,7 @@ TOPBAR='''<div id="progress"></div>
     <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#2c5b8f"/><path d="M9 22V10l7 5 7-5v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span>Encyclopédie du Patrimoine<small id="brandSub">France · CIF/COA expert</small></span>
   </a>
+  <a class="mode-pill" href="index.html" title="Version simple pour débutants"><span aria-hidden="true">✨</span><span class="lbl">Mode Débutant</span></a>
   <div class="spacer"></div>
   <div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
     <input id="searchInput" type="search" placeholder="Rechercher…  ( / )" autocomplete="off" aria-label="Recherche"></div>
@@ -294,6 +301,6 @@ DOC=u'''<!DOCTYPE html>
 </body>
 </html>''' % (css, TOPBAR, HUB, "\n\n".join(sections), TOTOP, SCRIPT)
 
-for name in ("index.html","Encyclopedie-Patrimoine.html"):
+for name in ("expert.html","Encyclopedie-Patrimoine.html"):
     with io.open(os.path.join(BASE,name),"w",encoding="utf-8") as f: f.write(DOC)
-print("OK -> index.html + Encyclopedie-Patrimoine.html"); print("Taille: %.0f Ko"%(len(DOC.encode('utf-8'))/1024)); print("Parties:",len(sections))
+print("OK -> expert.html + Encyclopedie-Patrimoine.html"); print("Taille: %.0f Ko"%(len(DOC.encode('utf-8'))/1024)); print("Parties:",len(sections))
